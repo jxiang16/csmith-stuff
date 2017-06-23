@@ -1,0 +1,10 @@
+digraph {
+Node0x2baea80[label="  %scevgep2 = getelementptr [7 x i32]* @..."];
+Node0x2baea80 -> Node0x2baea80[label="D:20.00ns L:0",color=blue];
+Node0x2baeb60[label="  %9 = load i32* %scevgep2, align 4"];
+Node0x2baeb60 -> Node0x2baeb60[label="D:0.00ns L:2",color=blue];
+Node0x2baee40[label="  call void @transparent_crc(i64 %10, i8..."];
+Node0x2baeb60 -> Node0x2baee40[label="D:0.00ns L:2",color=red];
+Node0x2baed60[label="  %10 = zext i32 %9 to i64"];
+Node0x2baed60 -> Node0x2baed60[label="D:0.00ns L:0",color=blue];
+}

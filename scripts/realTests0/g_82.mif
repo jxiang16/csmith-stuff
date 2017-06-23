@@ -1,0 +1,8 @@
+Depth = 1;
+Width = 16;
+Address_radix = dec;
+Data_radix = hex;
+Content
+Begin
+0: D847;	-- g_82[0] = -10169
+End;

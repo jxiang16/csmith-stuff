@@ -1,0 +1,12 @@
+digraph {
+Node0x3bd3150[label="  %102 = phi i1 [ true, %74 ], [ %100, %..."];
+Node0x3bd3150 -> Node0x3bd3150[label="D:0.00ns L:0",color=blue];
+Node0x3bd3230[label="  %103 = zext i1 %102 to i8"];
+Node0x3bd3230 -> Node0x3bd3230[label="D:0.00ns L:0",color=blue];
+Node0x3bd3310[label="  %104 = call zeroext i8 @safe_sub_func_..."];
+Node0x3bd3310 -> Node0x3bd3310[label="D:0.00ns L:1",color=blue];
+Node0x3bd33f0[label="  %105 = zext i8 %104 to i16"];
+Node0x3bd33f0 -> Node0x3bd33f0[label="D:0.00ns L:0",color=blue];
+Node0x3bd34d0[label="  %106 = and i16 %105, 1"];
+Node0x3bd34d0 -> Node0x3bd34d0[label="D:0.00ns L:0",color=blue];
+}

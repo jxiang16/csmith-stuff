@@ -1,0 +1,34 @@
+digraph {
+Node0x40bd220[label="  %247 = phi i1 [ false, %234 ], [ %245,..."];
+Node0x40bd220 -> Node0x40bd220[label="D:0.00ns L:0",color=blue];
+Node0x40bd300[label="  %248 = zext i1 %247 to i16"];
+Node0x40bd300 -> Node0x40bd300[label="D:0.00ns L:0",color=blue];
+Node0x40bd3e0[label="  %249 = getelementptr inbounds [4 x i32..."];
+Node0x40bd3e0 -> Node0x40bd3e0[label="D:0.00ns L:0",color=blue];
+Node0x40bd4c0[label="  %250 = load i32* %249, align 4"];
+Node0x40bd4c0 -> Node0x40bd4c0[label="D:0.00ns L:2",color=blue];
+Node0x40bd5a0[label="  %251 = call zeroext i16 @safe_lshift_f..."];
+Node0x40bd4c0 -> Node0x40bd5a0[label="D:0.00ns L:2",color=red];
+Node0x40bd680[label="  %252 = call i32 @safe_add_func_uint32_..."];
+Node0x40bd4c0 -> Node0x40bd680[label="D:0.00ns L:2",color=red];
+Node0x40bdae0[label="  %257 = call zeroext i8 @safe_lshift_fu..."];
+Node0x40bd4c0 -> Node0x40bdae0[label="D:0.00ns L:2",color=red];
+Node0x40bd5a0 -> Node0x40bd680[label="D:0.00ns L:1",color=red];
+Node0x40bd840[label="  %254 = load i32* %253, align 4"];
+Node0x40bd5a0 -> Node0x40bd840[label="D:0.00ns L:1",color=red];
+Node0x40bd5a0 -> Node0x40bdae0[label="D:0.00ns L:1",color=red];
+Node0x40bd680 -> Node0x40bd680[label="D:0.00ns L:1",color=blue];
+Node0x40bd680 -> Node0x40bd840[label="D:0.00ns L:1",color=red];
+Node0x40bd680 -> Node0x40bdae0[label="D:0.00ns L:1",color=red];
+Node0x40bd760[label="  %253 = getelementptr inbounds [4 x i32..."];
+Node0x40bd760 -> Node0x40bd760[label="D:0.00ns L:0",color=blue];
+Node0x40bd840 -> Node0x40bd840[label="D:0.00ns L:2",color=blue];
+Node0x40bd840 -> Node0x40bdae0[label="D:0.00ns L:2",color=red];
+Node0x40bd920[label="  %255 = or i32 %252, %254"];
+Node0x40bd920 -> Node0x40bd920[label="D:0.87ns L:0",color=blue];
+Node0x40bda00[label="  %256 = trunc i32 %255 to i8"];
+Node0x40bda00 -> Node0x40bda00[label="D:0.00ns L:0",color=blue];
+Node0x40bdae0 -> Node0x40bdae0[label="D:0.00ns L:1",color=blue];
+Node0x40bdbc0[label="  %258 = icmp eq i8 %257, 0"];
+Node0x40bdbc0 -> Node0x40bdbc0[label="D:1.79ns L:0",color=blue];
+}

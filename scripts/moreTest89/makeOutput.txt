@@ -1,0 +1,38 @@
+# annotate loop labels
+../../../mark_labels.pl moreTest89.c > moreTest89_labeled.c
+# produces pre-link time optimization binary bitcode: moreTest89.prelto.bc
+clang-3.5 moreTest89_labeled.c -emit-llvm -c -fno-builtin -I ../../../lib/include/ -m32 -I /usr/include/i386-linux-gnu -O0 -mllvm -inline-threshold=-100 -fno-inline -fno-vectorize -fno-slp-vectorize -o moreTest89.prelto.1.bc
+../../../../llvm/Release+Asserts/bin/llvm-dis moreTest89.prelto.1.bc
+cp -f moreTest89.prelto.1.bc moreTest89.prelto.cv.bc
+../../../../llvm/Release+Asserts/bin/opt -mem2reg -loops -loop-simplify < moreTest89.prelto.cv.bc > moreTest89.prelto.2.bc
+cp moreTest89.prelto.2.bc moreTest89.prelto.linked.bc
+# link-time optimizations may produce llvm mem-family intrinsics
+../../../../llvm/Release+Asserts/bin/opt -load=../../../../llvm/Release+Asserts/lib/LLVMLegUp.so -legup-config=../../../legup.tcl  -disable-inlining -disable-opt -std-link-opts < moreTest89.prelto.linked.bc -o moreTest89.prelto.linked.1.bc
+# performs intrinsic lowering so that the linker may be optimized
+../../../../llvm/Release+Asserts/bin/opt -load=../../../../llvm/Release+Asserts/lib/LLVMLegUp.so -legup-config=../../../legup.tcl  -disable-inlining -disable-opt -legup-prelto < moreTest89.prelto.linked.1.bc > moreTest89.prelto.6.bc
+# perform link-time optimizations
+../../../../llvm/Release+Asserts/bin/opt -load=../../../../llvm/Release+Asserts/lib/LLVMLegUp.so -legup-config=../../../legup.tcl  -disable-inlining -disable-opt -std-link-opts < moreTest89.prelto.6.bc -o moreTest89.prelto.bc
+# produces moreTest89.bc binary bitcode
+../../../../llvm/Release+Asserts/bin/llvm-link  moreTest89.prelto.bc ../../../lib/llvm/liblegup.bc ../../../lib/llvm/libm.bc -o moreTest89.postlto.6.bc
+# remove all unused functions from linking with liblegup and libm
+../../../../llvm/Release+Asserts/bin/opt -internalize-public-api-list=main -internalize -globaldce moreTest89.postlto.6.bc -o moreTest89.postlto.8.bc
+# perform link-time optimizations
+../../../../llvm/Release+Asserts/bin/opt -load=../../../../llvm/Release+Asserts/lib/LLVMLegUp.so -legup-config=../../../legup.tcl  -disable-inlining -disable-opt -instcombine -std-link-opts < moreTest89.postlto.8.bc -o moreTest89.postlto.bc
+# iterative modulo scheduling
+../../../../llvm/Release+Asserts/bin/opt -load=../../../../llvm/Release+Asserts/lib/LLVMLegUp.so -legup-config=../../../legup.tcl  -disable-inlining -disable-opt -basicaa -loop-simplify -indvars2  -loop-pipeline moreTest89.postlto.bc -o moreTest89.1.bc
+../../../../llvm/Release+Asserts/bin/opt -load=../../../../llvm/Release+Asserts/lib/LLVMLegUp.so -legup-config=../../../legup.tcl  -disable-inlining -disable-opt -instcombine moreTest89.1.bc -o moreTest89.bc 
+# produces textual bitcodes: moreTest89.prelto.1.ll moreTest89.prelto.ll moreTest89.ll
+../../../../llvm/Release+Asserts/bin/llvm-dis moreTest89.prelto.linked.bc
+../../../../llvm/Release+Asserts/bin/llvm-dis moreTest89.prelto.6.bc
+../../../../llvm/Release+Asserts/bin/llvm-dis moreTest89.prelto.bc
+../../../../llvm/Release+Asserts/bin/llvm-dis moreTest89.postlto.bc
+../../../../llvm/Release+Asserts/bin/llvm-dis moreTest89.postlto.6.bc
+../../../../llvm/Release+Asserts/bin/llvm-dis moreTest89.postlto.8.bc
+../../../../llvm/Release+Asserts/bin/llvm-dis moreTest89.1.bc
+../../../../llvm/Release+Asserts/bin/llvm-dis moreTest89.bc
+# produces verilog: moreTest89.v
+../../../../llvm/Release+Asserts/bin/llc -legup-config=../../../legup.tcl  -march=v moreTest89.bc -o moreTest89.v
+Warning: Used undefined value. Setting to 0.
+Warning: Used undefined value. Setting to 0.
+Warning: Used undefined value. Setting to 0.
+Warning: Used undefined value. Setting to 0.

@@ -1,0 +1,8 @@
+digraph {
+Node0x31b6160[label="  %10 = phi i32 [ 0, %8 ], [ %17, %16 ]"];
+Node0x31b6160 -> Node0x31b6160[label="D:0.00ns L:0",color=blue];
+Node0x31b6160 -> Node0x31b6160[label="D:0.00ns L:0",color=blue];
+Node0x31b6160 -> Node0x31b6160[label="D:0.00ns L:0",color=blue];
+Node0x31b6240[label="  %exitcond1 = icmp eq i32 %10, 10"];
+Node0x31b6240 -> Node0x31b6240[label="D:2.49ns L:0",color=blue];
+}

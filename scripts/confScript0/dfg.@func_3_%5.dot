@@ -1,0 +1,11 @@
+digraph {
+Node0x31c1480[label="  %6 = bitcast [7 x i32]* %l_10 to i8*"];
+Node0x31c1480 -> Node0x31c1480[label="D:0.00ns L:0",color=blue];
+Node0x31c1640[label="  store i16 %4, i16* @g_8, align 2"];
+Node0x31c1560[label="  call void @legup_memcpy_4(i8* %6, i8* ..."];
+Node0x31c1560 -> Node0x31c1640[label="D:0.00ns L:1",color=red];
+Node0x31bd4f0[label="  store i32 -1769391627, i32* %7, align ..."];
+Node0x31c1560 -> Node0x31bd4f0[label="D:0.00ns L:1",color=red];
+Node0x31bd410[label="  %7 = getelementptr inbounds [7 x i32]*..."];
+Node0x31bd410 -> Node0x31bd410[label="D:0.00ns L:0",color=blue];
+}

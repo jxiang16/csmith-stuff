@@ -1,0 +1,10 @@
+digraph {
+Node0x40bee20[label="  %277 = phi i1 [ false, %260 ], [ %275,..."];
+Node0x40bee20 -> Node0x40bee20[label="D:0.00ns L:0",color=blue];
+Node0x40bef00[label="  %278 = zext i1 %277 to i16"];
+Node0x40bef00 -> Node0x40bef00[label="D:0.00ns L:0",color=blue];
+Node0x40befe0[label="  %279 = call zeroext i16 @safe_mul_func..."];
+Node0x40befe0 -> Node0x40befe0[label="D:0.00ns L:1",color=blue];
+Node0x40bf0c0[label="  %280 = icmp eq i16 %279, 0"];
+Node0x40bf0c0 -> Node0x40bf0c0[label="D:2.01ns L:0",color=blue];
+}

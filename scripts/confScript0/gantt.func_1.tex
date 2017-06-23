@@ -1,0 +1,84 @@
+\documentclass[landscape]{article}
+\usepackage{gantt}
+\pagestyle{empty}
+\begin{document}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{14}{13}
+\begin{ganttitle}
+\numtitle{0}{1}{12}{1}
+\end{ganttitle}
+\ganttbar{  \%l\_82 = alloca [5 x [1 x i32]], align 4}{1}{1}
+\ganttcon{2}{1}{1}{2}
+\ganttbar{  \%1 = bitcast [5 x [1 x i32]]* \%l\_82 to i8*}{1}{1}
+\ganttcon{2}{2}{2}{3}
+\ganttbar{  call void @legup\_memcpy\_4(i8* \%1, i8* bitcast ([5 x [1 x i32]]* @func\_1.l\...}{2}{1}
+\ganttbar{  \%2 = load volatile i32* @g\_2, align 4}{3}{2}
+\ganttcon{5}{4}{5}{5}
+\ganttbar{  \%3 = or i32 \%2, 405055686}{5}{1}
+\ganttcon{6}{5}{5}{6}
+\ganttbar{  store volatile i32 \%3, i32* @g\_2, align 4}{5}{1}
+\ganttbar{  \%4 = load volatile i32* @g\_2, align 4}{6}{2}
+\ganttcon{8}{7}{9}{10}
+\ganttbar{  \%5 = load i32* @g\_6, align 4}{6}{2}
+\ganttcon{8}{8}{8}{9}
+\ganttbar{  \%6 = trunc i32 \%5 to i8}{8}{1}
+\ganttcon{9}{9}{9}{10}
+\ganttbar{  \%7 = call signext i16 @func\_3(i32 \%4, i8 zeroext \%6) #3}{9}{1}
+\ganttbar{  \%8 = load i16* @g\_78, align 2}{10}{2}
+\ganttcon{12}{11}{12}{12}
+\ganttbar{  \%9 = icmp eq i16 \%8, 0}{12}{1}
+\ganttcon{13}{12}{12}{13}
+\ganttbar{  br i1 \%9, label \%10, label \%11}{12}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{2}{2}
+\begin{ganttitle}
+\numtitle{0}{1}{1}{1}
+\end{ganttitle}
+\ganttbar{  br label \%11}{1}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{19}{19}
+\begin{ganttitle}
+\numtitle{0}{1}{18}{1}
+\end{ganttitle}
+\ganttbar{  \%15 = getelementptr inbounds [5 x [1 x i32]]* \%l\_82, i32 0, i32 1, i32 0}{1}{1}
+\ganttcon{2}{1}{7}{8}
+\ganttcon{2}{1}{5}{6}
+\ganttbar{  \%26 = getelementptr inbounds [5 x [1 x i32]]* \%l\_82, i32 0, i32 2, i32 0}{1}{1}
+\ganttcon{2}{2}{16}{17}
+\ganttbar{  \%12 = call zeroext i8 @safe\_div\_func\_uint8\_t\_u\_u(i8 zeroext 1, i8 zeroe...}{2}{1}
+\ganttbar{  \%13 = call signext i8 @safe\_sub\_func\_int8\_t\_s\_s(i8 signext 1, i8 signex...}{4}{1}
+\ganttcon{5}{4}{5}{5}
+\ganttbar{  \%14 = sext i8 \%13 to i32}{5}{1}
+\ganttcon{6}{5}{7}{7}
+\ganttbar{  \%16 = load i32* \%15, align 4}{5}{2}
+\ganttcon{7}{6}{7}{7}
+\ganttbar{  \%17 = xor i32 \%16, \%14}{7}{1}
+\ganttcon{8}{7}{7}{9}
+\ganttcon{8}{7}{7}{8}
+\ganttbar{  store i32 \%17, i32* \%15, align 4}{7}{1}
+\ganttbar{  \%18 = trunc i32 \%17 to i16}{7}{1}
+\ganttcon{8}{9}{9}{10}
+\ganttbar{  \%19 = call signext i16 @safe\_div\_func\_int16\_t\_s\_s(i16 signext -490, i16...}{9}{1}
+\ganttcon{10}{10}{11}{11}
+\ganttbar{  \%20 = call zeroext i16 @safe\_add\_func\_uint16\_t\_u\_u(i16 zeroext \%19, i1...}{11}{1}
+\ganttcon{12}{11}{14}{13}
+\ganttbar{  \%21 = load i16* @g\_78, align 2}{12}{2}
+\ganttcon{14}{12}{14}{15}
+\ganttcon{14}{12}{14}{13}
+\ganttbar{  \%22 = or i16 \%20, \%21}{14}{1}
+\ganttcon{15}{13}{14}{14}
+\ganttbar{  \%23 = trunc i16 \%22 to i8}{14}{1}
+\ganttcon{15}{14}{15}{16}
+\ganttbar{  \%24 = trunc i16 \%21 to i8}{14}{1}
+\ganttcon{15}{15}{15}{16}
+\ganttbar{  \%25 = call signext i8 @safe\_mul\_func\_int8\_t\_s\_s(i8 signext \%23, i8 sig...}{15}{1}
+\ganttbar{  \%27 = load i32* \%26, align 4}{16}{2}
+\ganttcon{18}{17}{18}{18}
+\ganttbar{  ret i32 \%27}{18}{1}
+\end{gantt}
+\end{figure}
+\end{document}

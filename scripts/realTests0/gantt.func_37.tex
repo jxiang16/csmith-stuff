@@ -1,0 +1,161 @@
+\documentclass[landscape]{article}
+\usepackage{gantt}
+\pagestyle{empty}
+\begin{document}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{12}{8}
+\begin{ganttitle}
+\numtitle{0}{1}{7}{1}
+\end{ganttitle}
+\ganttbar{  \%l\_72 = alloca [6 x i32], align 4}{1}{1}
+\ganttcon{2}{1}{1}{5}
+\ganttcon{2}{1}{1}{3}
+\ganttbar{  \%l\_81 = alloca [3 x [1 x [2 x i32]]], align 4}{1}{1}
+\ganttcon{2}{2}{1}{4}
+\ganttbar{  \%1 = bitcast [6 x i32]* \%l\_72 to i8*}{1}{1}
+\ganttcon{2}{3}{2}{6}
+\ganttbar{  \%2 = bitcast [3 x [1 x [2 x i32]]]* \%l\_81 to i8*}{1}{1}
+\ganttcon{2}{4}{4}{7}
+\ganttbar{  \%4 = getelementptr inbounds [6 x i32]* \%l\_72, i32 0, i32 4}{1}{1}
+\ganttcon{2}{5}{5}{9}
+\ganttbar{  call void @legup\_memcpy\_4(i8* \%1, i8* bitcast ([6 x i32]* @func\_37.l\_72 t...}{2}{1}
+\ganttbar{  call void @legup\_memcpy\_4(i8* \%2, i8* bitcast ([3 x [1 x [2 x i32]]]* @func...}{4}{1}
+\ganttbar{  \%3 = load i16* @g\_34, align 2}{5}{2}
+\ganttbar{  \%5 = load i32* \%4, align 4}{5}{2}
+\ganttcon{7}{9}{7}{10}
+\ganttbar{  \%6 = icmp eq i32 \%5, 0}{7}{1}
+\ganttcon{8}{10}{7}{11}
+\ganttbar{  br i1 \%6, label \%7, label \%24}{7}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{19}{12}
+\begin{ganttitle}
+\numtitle{0}{1}{11}{1}
+\end{ganttitle}
+\ganttbar{  \%8 = load volatile i32* @g\_9, align 4}{1}{2}
+\ganttcon{3}{1}{10}{18}
+\ganttbar{  \%13 = trunc i32 \%p\_38 to i16}{1}{1}
+\ganttcon{2}{2}{5}{9}
+\ganttbar{  \%14 = and i32 \%p\_38, 65535}{1}{1}
+\ganttcon{2}{3}{7}{11}
+\ganttbar{  \%19 = trunc i32 \%p\_38 to i8}{1}{1}
+\ganttcon{2}{4}{8}{15}
+\ganttbar{  br label \%24}{1}{1}
+\ganttbar{  \%9 = call signext i16 @safe\_unary\_minus\_func\_int16\_t\_s(i16 signext -8) ...}{4}{1}
+\ganttcon{5}{6}{5}{7}
+\ganttbar{  \%10 = sext i16 \%9 to i32}{5}{1}
+\ganttcon{6}{7}{7}{13}
+\ganttbar{  \%11 = load i16* @g\_34, align 2}{5}{2}
+\ganttcon{7}{8}{7}{10}
+\ganttbar{  store i16 \%13, i16* @g\_79, align 2}{5}{1}
+\ganttbar{  \%12 = sext i16 \%11 to i32}{7}{1}
+\ganttcon{8}{10}{7}{11}
+\ganttbar{  \%15 = icmp sgt i32 \%12, \%14}{7}{1}
+\ganttcon{8}{11}{7}{12}
+\ganttbar{  \%16 = zext i1 \%15 to i32}{7}{1}
+\ganttcon{8}{12}{7}{13}
+\ganttbar{  \%17 = icmp ne i32 \%10, \%16}{7}{1}
+\ganttcon{8}{13}{7}{14}
+\ganttbar{  \%18 = zext i1 \%17 to i8}{7}{1}
+\ganttcon{8}{14}{8}{15}
+\ganttbar{  \%20 = call signext i8 @safe\_mul\_func\_int8\_t\_s\_s(i8 signext \%18, i8 sig...}{8}{1}
+\ganttcon{9}{15}{9}{16}
+\ganttbar{  \%21 = zext i8 \%20 to i32}{9}{1}
+\ganttcon{10}{16}{9}{17}
+\ganttbar{  \%22 = and i32 \%21, 9}{9}{1}
+\ganttcon{10}{17}{10}{18}
+\ganttbar{  \%23 = call i32 @safe\_sub\_func\_uint32\_t\_u\_u(i32 \%8, i32 \%22) #3}{10}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{11}{6}
+\begin{ganttitle}
+\numtitle{0}{1}{5}{1}
+\end{ganttitle}
+\ganttbar{  \%27 = getelementptr inbounds [6 x i32]* \%l\_72, i32 0, i32 1}{1}{1}
+\ganttcon{2}{1}{3}{5}
+\ganttbar{  \%31 = getelementptr inbounds [6 x i32]* \%l\_72, i32 0, i32 4}{1}{1}
+\ganttcon{2}{2}{3}{6}
+\ganttbar{  \%25 = call signext i16 @safe\_lshift\_func\_int16\_t\_s\_s(i16 signext \%3, i...}{2}{1}
+\ganttcon{3}{3}{3}{4}
+\ganttbar{  \%26 = sext i16 \%25 to i32}{3}{1}
+\ganttcon{4}{4}{5}{7}
+\ganttbar{  \%28 = load i32* \%27, align 4}{3}{2}
+\ganttcon{5}{5}{5}{7}
+\ganttbar{  \%32 = load i32* \%31, align 4}{3}{2}
+\ganttcon{5}{6}{5}{9}
+\ganttbar{  \%29 = icmp ule i32 \%26, \%28}{5}{1}
+\ganttcon{6}{7}{5}{8}
+\ganttbar{  \%30 = zext i1 \%29 to i32}{5}{1}
+\ganttcon{6}{8}{5}{9}
+\ganttbar{  \%33 = icmp eq i32 \%30, \%32}{5}{1}
+\ganttcon{6}{9}{5}{10}
+\ganttbar{  br i1 \%33, label \%35, label \%34}{5}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{2}{2}
+\begin{ganttitle}
+\numtitle{0}{1}{1}{1}
+\end{ganttitle}
+\ganttbar{  br label \%35}{1}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{27}{12}
+\begin{ganttitle}
+\numtitle{0}{1}{11}{1}
+\end{ganttitle}
+\ganttbar{  \%36 = phi i8 [ 0, \%24 ], [ 1, \%34 ]}{1}{1}
+\ganttcon{2}{1}{2}{7}
+\ganttbar{  \%37 = trunc i32 \%p\_38 to i8}{1}{1}
+\ganttcon{2}{2}{2}{7}
+\ganttbar{  \%44 = trunc i32 \%p\_38 to i16}{1}{1}
+\ganttcon{2}{3}{6}{13}
+\ganttbar{  \%49 = getelementptr inbounds [6 x i32]* \%l\_72, i32 0, i32 5}{1}{1}
+\ganttcon{2}{4}{7}{15}
+\ganttbar{  \%57 = getelementptr inbounds [3 x [1 x [2 x i32]]]* \%l\_81, i32 0, i32 2, i3...}{1}{1}
+\ganttcon{2}{5}{10}{25}
+\ganttbar{  \%58 = getelementptr inbounds [6 x i32]* \%l\_72, i32 0, i32 4}{1}{1}
+\ganttcon{2}{6}{8}{17}
+\ganttbar{  \%38 = call zeroext i8 @safe\_add\_func\_uint8\_t\_u\_u(i8 zeroext \%36, i8 ze...}{2}{1}
+\ganttcon{3}{7}{3}{8}
+\ganttbar{  \%39 = icmp eq i8 \%38, 0}{3}{1}
+\ganttcon{4}{8}{3}{9}
+\ganttbar{  \%40 = zext i1 \%39 to i32}{3}{1}
+\ganttcon{4}{9}{5}{11}
+\ganttbar{  \%41 = load i32* @g\_33, align 4}{3}{2}
+\ganttcon{5}{10}{5}{11}
+\ganttbar{  \%42 = icmp sle i32 \%40, \%41}{5}{1}
+\ganttcon{6}{11}{5}{12}
+\ganttbar{  \%43 = zext i1 \%42 to i16}{5}{1}
+\ganttcon{6}{12}{6}{13}
+\ganttbar{  \%45 = call signext i16 @safe\_mod\_func\_int16\_t\_s\_s(i16 signext \%43, i16...}{6}{1}
+\ganttbar{  \%46 = load i16* @g\_34, align 2}{7}{2}
+\ganttcon{9}{14}{9}{18}
+\ganttbar{  \%50 = load i32* \%49, align 4}{7}{2}
+\ganttcon{9}{15}{9}{20}
+\ganttbar{  \%53 = load i16* @g\_34, align 2}{8}{2}
+\ganttcon{10}{16}{10}{22}
+\ganttbar{  \%59 = load i32* \%58, align 4}{8}{2}
+\ganttcon{10}{17}{11}{26}
+\ganttbar{  \%47 = sext i16 \%46 to i32}{9}{1}
+\ganttcon{10}{18}{9}{19}
+\ganttbar{  \%48 = or i32 \%47, \%p\_38}{9}{1}
+\ganttcon{10}{19}{9}{20}
+\ganttbar{  \%51 = icmp uge i32 \%48, \%50}{9}{1}
+\ganttcon{10}{20}{9}{21}
+\ganttbar{  \%52 = zext i1 \%51 to i32}{9}{1}
+\ganttcon{10}{21}{10}{23}
+\ganttbar{  \%54 = sext i16 \%53 to i32}{10}{1}
+\ganttcon{11}{22}{10}{23}
+\ganttbar{  \%55 = icmp sge i32 \%52, \%54}{10}{1}
+\ganttcon{11}{23}{10}{24}
+\ganttbar{  \%56 = zext i1 \%55 to i32}{10}{1}
+\ganttcon{11}{24}{10}{25}
+\ganttbar{  store i32 \%56, i32* \%57, align 4}{10}{1}
+\ganttbar{  ret i32 \%59}{11}{1}
+\end{gantt}
+\end{figure}
+\end{document}

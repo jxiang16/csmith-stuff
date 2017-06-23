@@ -1,0 +1,17 @@
+Depth = 10;
+Width = 32;
+Address_radix = dec;
+Data_radix = hex;
+Content
+Begin
+0: 00000001;	-- func_16l_50[0] = 1
+1: 8A251ABE;	-- func_16l_50[1] = -1977279810
+2: FFFFFFF7;	-- func_16l_50[2] = -9
+3: 8A251ABE;	-- func_16l_50[3] = -1977279810
+4: 00000001;	-- func_16l_50[4] = 1
+5: 00000001;	-- func_16l_50[5] = 1
+6: 8A251ABE;	-- func_16l_50[6] = -1977279810
+7: FFFFFFF7;	-- func_16l_50[7] = -9
+8: 8A251ABE;	-- func_16l_50[8] = -1977279810
+9: 00000001;	-- func_16l_50[9] = 1
+End;

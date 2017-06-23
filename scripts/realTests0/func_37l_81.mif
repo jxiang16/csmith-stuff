@@ -1,0 +1,13 @@
+Depth = 6;
+Width = 32;
+Address_radix = dec;
+Data_radix = hex;
+Content
+Begin
+0: FFFFFFF7;	-- func_37l_81[0] = -9
+1: FFFFFFF7;	-- func_37l_81[1] = -9
+2: FFFFFFF7;	-- func_37l_81[2] = -9
+3: FFFFFFF7;	-- func_37l_81[3] = -9
+4: FFFFFFF7;	-- func_37l_81[4] = -9
+5: FFFFFFF7;	-- func_37l_81[5] = -9
+End;

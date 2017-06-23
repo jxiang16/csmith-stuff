@@ -1,0 +1,12 @@
+Depth = 5;
+Width = 32;
+Address_radix = dec;
+Data_radix = hex;
+Content
+Begin
+0: 00000001;	-- func_1l_82[0] = 1
+1: 00000001;	-- func_1l_82[1] = 1
+2: 00000001;	-- func_1l_82[2] = 1
+3: 00000001;	-- func_1l_82[3] = 1
+4: 00000001;	-- func_1l_82[4] = 1
+End;

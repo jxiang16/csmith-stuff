@@ -1,0 +1,38 @@
+digraph {
+Node0x31aeb40[label="  %l_82 = alloca [5 x [1 x i32]], align ..."];
+Node0x31aeb40 -> Node0x31aeb40[label="D:0.00ns L:0",color=blue];
+Node0x31aeb40 -> Node0x31aeb40[label="D:0.00ns L:0",color=blue];
+Node0x31aeb40 -> Node0x31aeb40[label="D:0.00ns L:0",color=blue];
+Node0x31b00e0[label="  %1 = bitcast [5 x [1 x i32]]* %l_82 to..."];
+Node0x31b00e0 -> Node0x31b00e0[label="D:0.00ns L:0",color=blue];
+Node0x31b02a0[label="  %2 = load volatile i32* @g_2, align 4"];
+Node0x31b01c0[label="  call void @legup_memcpy_4(i8* %1, i8* ..."];
+Node0x31b01c0 -> Node0x31b02a0[label="D:0.00ns L:1",color=red];
+Node0x31b0460[label="  store volatile i32 %3, i32* @g_2, alig..."];
+Node0x31b01c0 -> Node0x31b0460[label="D:0.00ns L:1",color=red];
+Node0x31b0540[label="  %4 = load volatile i32* @g_2, align 4"];
+Node0x31b01c0 -> Node0x31b0540[label="D:0.00ns L:1",color=red];
+Node0x31b0620[label="  %5 = load i32* @g_6, align 4"];
+Node0x31b01c0 -> Node0x31b0620[label="D:0.00ns L:1",color=red];
+Node0x31b07e0[label="  %7 = call signext i16 @func_3(i32 %4, ..."];
+Node0x31b01c0 -> Node0x31b07e0[label="D:0.00ns L:1",color=red];
+Node0x31b08c0[label="  %8 = load i16* @g_78, align 2"];
+Node0x31b01c0 -> Node0x31b08c0[label="D:0.00ns L:1",color=red];
+Node0x31b02a0 -> Node0x31b02a0[label="D:0.00ns L:2",color=blue];
+Node0x31b02a0 -> Node0x31b0460[label="D:0.00ns L:2",color=red];
+Node0x31b02a0 -> Node0x31b07e0[label="D:0.00ns L:2",color=red];
+Node0x31b0380[label="  %3 = or i32 %2, 405055686"];
+Node0x31b0380 -> Node0x31b0380[label="D:0.00ns L:0",color=blue];
+Node0x31b0460 -> Node0x31b0540[label="D:20.00ns L:1",color=red];
+Node0x31b0460 -> Node0x31b07e0[label="D:20.00ns L:1",color=red];
+Node0x31b0540 -> Node0x31b0540[label="D:0.00ns L:2",color=blue];
+Node0x31b0540 -> Node0x31b07e0[label="D:0.00ns L:2",color=red];
+Node0x31b0620 -> Node0x31b0620[label="D:0.00ns L:2",color=blue];
+Node0x31b0620 -> Node0x31b07e0[label="D:0.00ns L:2",color=red];
+Node0x31b0700[label="  %6 = trunc i32 %5 to i8"];
+Node0x31b0700 -> Node0x31b0700[label="D:0.00ns L:0",color=blue];
+Node0x31b07e0 -> Node0x31b08c0[label="D:0.00ns L:1",color=red];
+Node0x31b08c0 -> Node0x31b08c0[label="D:0.00ns L:2",color=blue];
+Node0x31b09a0[label="  %9 = icmp eq i16 %8, 0"];
+Node0x31b09a0 -> Node0x31b09a0[label="D:2.01ns L:0",color=blue];
+}

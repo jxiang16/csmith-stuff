@@ -1,0 +1,30 @@
+digraph {
+Node0x409ba60[label="  %103 = xor i32 %21, 2"];
+Node0x409ba60 -> Node0x409ba60[label="D:0.91ns L:0",color=blue];
+Node0x409bb40[label="  %104 = load i32* getelementptr inbound..."];
+Node0x409bb40 -> Node0x409bb40[label="D:0.00ns L:2",color=blue];
+Node0x409c4e0[label="  %114 = call signext i16 @safe_mul_func..."];
+Node0x409bb40 -> Node0x409c4e0[label="D:0.00ns L:2",color=red];
+Node0x409bc20[label="  %105 = icmp ule i32 %103, %104"];
+Node0x409bc20 -> Node0x409bc20[label="D:3.04ns L:0",color=blue];
+Node0x409bd00[label="  %tmp = icmp ult i32 %94, -1627762983"];
+Node0x409bd00 -> Node0x409bd00[label="D:2.92ns L:0",color=blue];
+Node0x409bde0[label="  %106 = or i1 %105, %tmp"];
+Node0x409bde0 -> Node0x409bde0[label="D:0.00ns L:0",color=blue];
+Node0x409bec0[label="  %107 = zext i1 %106 to i32"];
+Node0x409bec0 -> Node0x409bec0[label="D:0.00ns L:0",color=blue];
+Node0x409bfa0[label="  %108 = or i32 %107, %21"];
+Node0x409bfa0 -> Node0x409bfa0[label="D:0.87ns L:0",color=blue];
+Node0x409c080[label="  %109 = load i32* @g_44, align 4"];
+Node0x409c080 -> Node0x409c080[label="D:0.00ns L:2",color=blue];
+Node0x409c080 -> Node0x409c4e0[label="D:0.00ns L:2",color=red];
+Node0x409c160[label="  %110 = and i32 %108, %109"];
+Node0x409c160 -> Node0x409c160[label="D:0.87ns L:0",color=blue];
+Node0x409c240[label="  %111 = load i32* getelementptr inbound..."];
+Node0x409c240 -> Node0x409c240[label="D:0.00ns L:2",color=blue];
+Node0x409c240 -> Node0x409c4e0[label="D:0.00ns L:2",color=red];
+Node0x409c320[label="  %112 = icmp ule i32 %110, %111"];
+Node0x409c320 -> Node0x409c320[label="D:3.04ns L:0",color=blue];
+Node0x409c400[label="  %113 = zext i1 %112 to i16"];
+Node0x409c400 -> Node0x409c400[label="D:0.00ns L:0",color=blue];
+}

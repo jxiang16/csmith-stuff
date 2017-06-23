@@ -1,0 +1,11 @@
+digraph {
+Node0x31a21b0[label="  %75 = load volatile i32* getelementptr..."];
+Node0x31a21b0 -> Node0x31a21b0[label="D:0.00ns L:2",color=blue];
+Node0x319fb00[label="  %76 = trunc i32 %75 to i16"];
+Node0x319fb00 -> Node0x319fb00[label="D:0.00ns L:0",color=blue];
+Node0x319fbe0[label="  %77 = and i32 %indvar, 20"];
+Node0x319fbe0 -> Node0x319fbe0[label="D:0.00ns L:0",color=blue];
+Node0x319fbe0 -> Node0x319fbe0[label="D:0.00ns L:0",color=blue];
+Node0x319fda0[label="  %78 = icmp eq i32 %77, 0"];
+Node0x319fda0 -> Node0x319fda0[label="D:2.49ns L:0",color=blue];
+}

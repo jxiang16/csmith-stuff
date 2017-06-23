@@ -1,0 +1,19 @@
+digraph {
+Node0x409b280[label="  %94 = load i32* @g_44, align 4"];
+Node0x409b280 -> Node0x409b280[label="D:0.00ns L:2",color=blue];
+Node0x409b280 -> Node0x409b280[label="D:0.00ns L:2",color=blue];
+Node0x409b6e0[label="  %99 = call zeroext i16 @safe_sub_func_..."];
+Node0x409b280 -> Node0x409b6e0[label="D:0.00ns L:2",color=red];
+Node0x409b360[label="  %95 = trunc i32 %94 to i16"];
+Node0x409b360 -> Node0x409b360[label="D:0.00ns L:0",color=blue];
+Node0x409b440[label="  %96 = getelementptr inbounds [2 x i32]..."];
+Node0x409b440 -> Node0x409b440[label="D:0.00ns L:0",color=blue];
+Node0x409b520[label="  %97 = load i32* %96, align 4"];
+Node0x409b520 -> Node0x409b520[label="D:0.00ns L:2",color=blue];
+Node0x409b520 -> Node0x409b6e0[label="D:0.00ns L:2",color=red];
+Node0x409b600[label="  %98 = trunc i32 %97 to i16"];
+Node0x409b600 -> Node0x409b600[label="D:0.00ns L:0",color=blue];
+Node0x409b6e0 -> Node0x409b6e0[label="D:0.00ns L:1",color=blue];
+Node0x409b7c0[label="  %100 = icmp eq i16 %99, 0"];
+Node0x409b7c0 -> Node0x409b7c0[label="D:2.01ns L:0",color=blue];
+}

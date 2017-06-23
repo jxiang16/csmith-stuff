@@ -1,0 +1,7 @@
+digraph {
+Node0x2d62530[label="LEGUP_F_safe_sub_func_uint16_t_u_u_BB__0..."];
+Node0x2d63410[label="LEGUP_0"];
+Node0x2d63410 -> Node0x2d62530[label="start"];
+Node0x2d63410 -> Node0x2d63410[label="~start"];
+Node0x2d62530 -> Node0x2d63410;
+}

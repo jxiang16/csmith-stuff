@@ -1,0 +1,51 @@
+\documentclass[landscape]{article}
+\usepackage{gantt}
+\pagestyle{empty}
+\begin{document}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{25}{18}
+\begin{ganttitle}
+\numtitle{0}{1}{17}{1}
+\end{ganttitle}
+\ganttbar{  \%1 = trunc i64 \%val to i8}{1}{1}
+\ganttcon{2}{1}{2}{16}
+\ganttbar{  \%2 = lshr i64 \%val, 8}{1}{1}
+\ganttcon{2}{2}{1}{3}
+\ganttbar{  \%3 = trunc i64 \%2 to i8}{1}{1}
+\ganttcon{2}{3}{4}{17}
+\ganttbar{  \%4 = lshr i64 \%val, 16}{1}{1}
+\ganttcon{2}{4}{1}{5}
+\ganttbar{  \%5 = trunc i64 \%4 to i8}{1}{1}
+\ganttcon{2}{5}{6}{18}
+\ganttbar{  \%6 = lshr i64 \%val, 24}{1}{1}
+\ganttcon{2}{6}{1}{7}
+\ganttbar{  \%7 = trunc i64 \%6 to i8}{1}{1}
+\ganttcon{2}{7}{8}{19}
+\ganttbar{  \%8 = lshr i64 \%val, 32}{1}{1}
+\ganttcon{2}{8}{1}{9}
+\ganttbar{  \%9 = trunc i64 \%8 to i8}{1}{1}
+\ganttcon{2}{9}{10}{20}
+\ganttbar{  \%10 = lshr i64 \%val, 40}{1}{1}
+\ganttcon{2}{10}{1}{11}
+\ganttbar{  \%11 = trunc i64 \%10 to i8}{1}{1}
+\ganttcon{2}{11}{12}{21}
+\ganttbar{  \%12 = lshr i64 \%val, 48}{1}{1}
+\ganttcon{2}{12}{1}{13}
+\ganttbar{  \%13 = trunc i64 \%12 to i8}{1}{1}
+\ganttcon{2}{13}{14}{22}
+\ganttbar{  \%14 = lshr i64 \%val, 56}{1}{1}
+\ganttcon{2}{14}{1}{15}
+\ganttbar{  \%15 = trunc i64 \%14 to i8}{1}{1}
+\ganttcon{2}{15}{16}{23}
+\ganttbar{  call void @crc32\_byte(i8 zeroext \%1) #2}{2}{1}
+\ganttbar{  call void @crc32\_byte(i8 zeroext \%3) #2}{4}{1}
+\ganttbar{  call void @crc32\_byte(i8 zeroext \%5) #2}{6}{1}
+\ganttbar{  call void @crc32\_byte(i8 zeroext \%7) #2}{8}{1}
+\ganttbar{  call void @crc32\_byte(i8 zeroext \%9) #2}{10}{1}
+\ganttbar{  call void @crc32\_byte(i8 zeroext \%11) #2}{12}{1}
+\ganttbar{  call void @crc32\_byte(i8 zeroext \%13) #2}{14}{1}
+\ganttbar{  call void @crc32\_byte(i8 zeroext \%15) #2}{16}{1}
+\ganttbar{  ret void}{17}{1}
+\end{gantt}
+\end{figure}
+\end{document}

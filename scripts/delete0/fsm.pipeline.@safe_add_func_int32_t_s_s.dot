@@ -1,0 +1,29 @@
+digraph {
+Node0x4041000[label="LEGUP_F_safe_add_func_int32_t_s_s_BB__0"];
+Node0x4046890[label="LEGUP"];
+Node0x4046890 -> Node0x4041000[label="<null>"];
+Node0x4046890 -> Node0x4046890[label="~<null>"];
+Node0x40410d0[label="LEGUP_F_safe_add_func_int32_t_s_s_BB__2"];
+Node0x4041000 -> Node0x40410d0[label="%1"];
+Node0x4041270[label="LEGUP_F_safe_add_func_int32_t_s_s_BB__7"];
+Node0x4041000 -> Node0x4041270[label="~%1"];
+Node0x40411a0[label="LEGUP_F_safe_add_func_int32_t_s_s_BB__4"];
+Node0x40410d0 -> Node0x40411a0[label="%3"];
+Node0x40410d0 -> Node0x4041270[label="~%3"];
+Node0x40414e0[label="LEGUP_F_safe_add_func_int32_t_s_s_BB__14"];
+Node0x40411a0 -> Node0x40414e0[label="%6"];
+Node0x40411a0 -> Node0x4041270[label="~%6"];
+Node0x4041340[label="LEGUP_F_safe_add_func_int32_t_s_s_BB__9"];
+Node0x4041270 -> Node0x4041340[label="%8"];
+Node0x40415b0[label="LEGUP_F_safe_add_func_int32_t_s_s_BB__15"];
+Node0x4041270 -> Node0x40415b0[label="~%8"];
+Node0x4041410[label="LEGUP_F_safe_add_func_int32_t_s_s_BB__11"];
+Node0x4041340 -> Node0x4041410[label="%10"];
+Node0x4041340 -> Node0x40415b0[label="~%10"];
+Node0x4041410 -> Node0x40414e0[label="%13"];
+Node0x4041410 -> Node0x40415b0[label="~%13"];
+Node0x4041680[label="LEGUP_F_safe_add_func_int32_t_s_s_BB__17"];
+Node0x40414e0 -> Node0x4041680;
+Node0x40415b0 -> Node0x4041680;
+Node0x4041680 -> Node0x4046890;
+}

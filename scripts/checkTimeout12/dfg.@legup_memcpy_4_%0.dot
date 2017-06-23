@@ -1,0 +1,24 @@
+digraph {
+Node0x2bc5bc0[label="  %1 = alloca i32, align 4"];
+Node0x2bc5bc0 -> Node0x2bc5bc0[label="D:0.00ns L:0",color=blue];
+Node0x2bc5bc0 -> Node0x2bc5bc0[label="D:0.00ns L:0",color=blue];
+Node0x2bc5bc0 -> Node0x2bc5bc0[label="D:0.00ns L:0",color=blue];
+Node0x2bc5bc0 -> Node0x2bc5bc0[label="D:0.00ns L:0",color=blue];
+Node0x2b75260[label="  %dt = alloca i32*, align 4"];
+Node0x2b75260 -> Node0x2b75260[label="D:0.00ns L:0",color=blue];
+Node0x2b75260 -> Node0x2b75260[label="D:0.00ns L:0",color=blue];
+Node0x2b75260 -> Node0x2b75260[label="D:0.00ns L:0",color=blue];
+Node0x2b753a0[label="  %st = alloca i32*, align 4"];
+Node0x2b753a0 -> Node0x2b753a0[label="D:0.00ns L:0",color=blue];
+Node0x2b753a0 -> Node0x2b753a0[label="D:0.00ns L:0",color=blue];
+Node0x2b753a0 -> Node0x2b753a0[label="D:0.00ns L:0",color=blue];
+Node0x2b759f0[label="  store i32 %4, i32* %1, align 4"];
+Node0x2b75480[label="  store i32 %n, i32* %1, align 4"];
+Node0x2b75480 -> Node0x2b759f0[label="D:20.00ns L:1",color=red];
+Node0x2b75590[label="  %2 = bitcast i8* %d to i32*"];
+Node0x2b75590 -> Node0x2b75590[label="D:0.00ns L:0",color=blue];
+Node0x2b75750[label="  %3 = bitcast i8* %s to i32*"];
+Node0x2b75750 -> Node0x2b75750[label="D:0.00ns L:0",color=blue];
+Node0x2b75910[label="  %4 = lshr i32 %n, 2"];
+Node0x2b75910 -> Node0x2b75910[label="D:0.00ns L:0",color=blue];
+}

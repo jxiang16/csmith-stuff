@@ -1,0 +1,14 @@
+digraph {
+Node0x33b92b0[label="LEGUP_F_safe_rshift_func_uint16_t_u_u_BB..."];
+Node0x33b9110[label="LEGUP"];
+Node0x33b9110 -> Node0x33b92b0[label="<null>"];
+Node0x33b9110 -> Node0x33b9110[label="~<null>"];
+Node0x33b9380[label="LEGUP_F_safe_rshift_func_uint16_t_u_u_BB..."];
+Node0x33b92b0 -> Node0x33b9380[label="%1"];
+Node0x33b8220[label="LEGUP_F_safe_rshift_func_uint16_t_u_u_BB..."];
+Node0x33b92b0 -> Node0x33b8220[label="~%1"];
+Node0x33b82f0[label="LEGUP_F_safe_rshift_func_uint16_t_u_u_BB..."];
+Node0x33b9380 -> Node0x33b82f0;
+Node0x33b8220 -> Node0x33b82f0;
+Node0x33b82f0 -> Node0x33b9110;
+}

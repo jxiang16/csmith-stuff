@@ -1,0 +1,8 @@
+digraph {
+Node0x4100830[label="  %22 = load i32* @g_44, align 4"];
+Node0x4100830 -> Node0x4100830[label="D:0.00ns L:2",color=blue];
+Node0x41009f0[label="  call void @transparent_crc(i64 %23, i8..."];
+Node0x4100830 -> Node0x41009f0[label="D:0.00ns L:2",color=red];
+Node0x4100910[label="  %23 = sext i32 %22 to i64"];
+Node0x4100910 -> Node0x4100910[label="D:0.00ns L:0",color=blue];
+}

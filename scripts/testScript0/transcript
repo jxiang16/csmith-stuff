@@ -1,0 +1,29 @@
+# vsim -c -do "run 7000000000000000ns; exit;" work.main_tb 
+# Start time: 19:47:32 on Jun 12,2017
+# Loading work.main_tb
+# Loading work.top
+# Loading work.memory_controller
+# Loading work.ram_dual_port
+# Loading work.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading work.rom_dual_port
+# Loading work.main
+# Loading work.platform_main_begin
+# Loading work.crc32_gentab
+# Loading work.func_1
+# Loading work.legup_memcpy_4
+# Loading work.transparent_crc
+# Loading work.crc32_8bytes
+# Loading work.crc32_byte
+# Loading work.platform_main_end
+# ** Warning: (vsim-3017) testScript0.v(109): [TFMPC] - Too few port connections. Expected 22, found 20.
+#         Region: /main_tb/top_inst/main_inst
+# ** Warning: (vsim-3722) testScript0.v(109): [TFMPC] - Missing connection for port 'arg_argc'.
+# ** Warning: (vsim-3722) testScript0.v(109): [TFMPC] - Missing connection for port 'arg_argv'.
+# run 7000000000000000ns
+# checksum =  544335813
+# At t=           445090000 clk=1 finish=1 return_val= 544335813
+# Cycles:                22252
+# ** Note: $finish    : testScript0.v(7460)
+#    Time: 445090 ns  Iteration: 2  Instance: /main_tb
+# End time: 19:47:36 on Jun 12,2017, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 3

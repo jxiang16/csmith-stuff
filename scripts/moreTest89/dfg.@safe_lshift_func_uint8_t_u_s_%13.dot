@@ -1,0 +1,6 @@
+digraph {
+Node0x336d5c0[label="  %14 = phi i32 [ %9, %8 ], [ %12, %10 ]"];
+Node0x336d5c0 -> Node0x336d5c0[label="D:0.00ns L:0",color=blue];
+Node0x336d6a0[label="  %15 = trunc i32 %14 to i8"];
+Node0x336d6a0 -> Node0x336d6a0[label="D:0.00ns L:0",color=blue];
+}

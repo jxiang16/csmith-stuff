@@ -1,0 +1,6 @@
+digraph {
+Node0x2d8eed0[label="  %58 = load i16* @g_79, align 2"];
+Node0x2d8eed0 -> Node0x2d8eed0[label="D:0.00ns L:2",color=blue];
+Node0x2d8efb0[label="  %59 = zext i16 %58 to i32"];
+Node0x2d8efb0 -> Node0x2d8efb0[label="D:0.00ns L:0",color=blue];
+}

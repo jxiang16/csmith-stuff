@@ -1,0 +1,9 @@
+digraph {
+Node0x4103500[label="  %57 = load i32* @crc32_context, align ..."];
+Node0x4103500 -> Node0x4103500[label="D:0.00ns L:2",color=blue];
+Node0x41036c0[label="  %59 = call i32 @platform_main_end(i32 ..."];
+Node0x4103500 -> Node0x41036c0[label="D:0.00ns L:2",color=red];
+Node0x41035e0[label="  %58 = xor i32 %57, -1"];
+Node0x41035e0 -> Node0x41035e0[label="D:0.91ns L:0",color=blue];
+Node0x41036c0 -> Node0x41036c0[label="D:0.00ns L:1",color=blue];
+}

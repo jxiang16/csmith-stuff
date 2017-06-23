@@ -1,0 +1,240 @@
+vsim  -c -do "vlib work; exit;" 
+Reading pref.tcl
+
+# 10.3d
+
+# vlib work
+#  exit
+vlog -v ../../../../ip/libs/altera/220model.v -v ../../../../ip/libs/altera/altera_mf.v -v ../../../../ip/libs/altera/altera_primitives.v -v ../../../../ip/libs/altera/altfp_adder_14.v -v ../../../../ip/libs/altera/altfp_adder64_14.v -v ../../../../ip/libs/altera/altfp_subtractor_14.v -v ../../../../ip/libs/altera/altfp_subtractor64_14.v -v ../../../../ip/libs/altera/altfp_multiplier_11.v -v ../../../../ip/libs/altera/altfp_multiplier64_11.v -v ../../../../ip/libs/altera/altfp_divider_33.v -v ../../../../ip/libs/altera/altfp_divider64_61.v -v ../../../../ip/libs/altera/altfp_compare32_1.v -v ../../../../ip/libs/altera/altfp_compare64_1.v -v ../../../../ip/libs/altera/altfp_truncate_3.v -v ../../../../ip/libs/altera/altfp_extend_2.v -v ../../../../ip/libs/altera/altfp_sitofp32_6.v -v ../../../../ip/libs/altera/altfp_sitofp64_6.v -v ../../../../ip/libs/altera/altfp_fptosi32_6.v -v ../../../../ip/libs/altera/altfp_fptosi64_6.v -v ../../../../serial_divider/SerialDivider.v -v ../../../../ip/libs/altera/altfp_adder_13.v -v ../../../../ip/libs/altera/altfp_adder64_13.v -v ../../../../ip/libs/altera/sgate.v -v ../../../../ip/libs/generic/div_unsigned.v -v ../../../../ip/libs/generic/div_signed.v -v ../../../../ip/libs/altera/cyclonev_atoms.v -v ../../../../ip/libs/altera/cyclonev_hssi_atoms.v -v ../../../../ip/libs/altera/cyclonev_pcie_hip_atoms.v deleteThis0.v
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+Start time: 14:59:17 on Jun 13,2017
+vlog -v ../../../../ip/libs/altera/220model.v -v ../../../../ip/libs/altera/altera_mf.v -v ../../../../ip/libs/altera/altera_primitives.v -v ../../../../ip/libs/altera/altfp_adder_14.v -v ../../../../ip/libs/altera/altfp_adder64_14.v -v ../../../../ip/libs/altera/altfp_subtractor_14.v -v ../../../../ip/libs/altera/altfp_subtractor64_14.v -v ../../../../ip/libs/altera/altfp_multiplier_11.v -v ../../../../ip/libs/altera/altfp_multiplier64_11.v -v ../../../../ip/libs/altera/altfp_divider_33.v -v ../../../../ip/libs/altera/altfp_divider64_61.v -v ../../../../ip/libs/altera/altfp_compare32_1.v -v ../../../../ip/libs/altera/altfp_compare64_1.v -v ../../../../ip/libs/altera/altfp_truncate_3.v -v ../../../../ip/libs/altera/altfp_extend_2.v -v ../../../../ip/libs/altera/altfp_sitofp32_6.v -v ../../../../ip/libs/altera/altfp_sitofp64_6.v -v ../../../../ip/libs/altera/altfp_fptosi32_6.v -v ../../../../ip/libs/altera/altfp_fptosi64_6.v -v ../../../../serial_divider/SerialDivider.v -v ../../../../ip/libs/altera/altfp_adder_13.v -v ../../../../ip/libs/altera/altfp_adder64_13.v -v ../../../../ip/libs/altera/sgate.v -v ../../../../ip/libs/generic/div_unsigned.v -v ../../../../ip/libs/generic/div_signed.v -v ../../../../ip/libs/altera/cyclonev_atoms.v -v ../../../../ip/libs/altera/cyclonev_hssi_atoms.v -v ../../../../ip/libs/altera/cyclonev_pcie_hip_atoms.v deleteThis0.v 
+-- Compiling module top
+-- Compiling module memory_controller
+-- Compiling module platform_main_begin
+-- Compiling module crc32_gentab
+-- Compiling module platform_main_end
+-- Compiling module crc32_byte
+-- Compiling module func_4
+-- Compiling module func_10
+-- Compiling module safe_unary_minus_func_int16_t_s
+-- Compiling module safe_lshift_func_uint16_t_u_s
+-- Compiling module safe_add_func_int8_t_s_s
+-- Compiling module safe_mul_func_int8_t_s_s
+-- Compiling module safe_mod_func_uint8_t_u_u
+-- Compiling module safe_add_func_uint8_t_u_u
+-- Compiling module safe_lshift_func_uint8_t_u_s
+-- Compiling module safe_rshift_func_uint8_t_u_s
+-- Compiling module safe_mod_func_int8_t_s_s
+-- Compiling module safe_lshift_func_uint8_t_u_u
+-- Compiling module safe_div_func_int32_t_s_s
+-- Compiling module safe_add_func_int16_t_s_s
+-- Compiling module safe_sub_func_int32_t_s_s
+-- Compiling module safe_sub_func_uint8_t_u_u
+-- Compiling module safe_lshift_func_int16_t_s_u
+-- Compiling module safe_mod_func_int16_t_s_s
+-- Compiling module safe_div_func_int8_t_s_s
+-- Compiling module safe_sub_func_int16_t_s_s
+-- Compiling module safe_sub_func_int8_t_s_s
+-- Compiling module safe_div_func_uint16_t_u_u
+-- Compiling module legup_memcpy_2
+-- Compiling module legup_memcpy_4
+-- Compiling module crc32_8bytes
+-- Compiling module func_16
+-- Compiling module func_1
+-- Compiling module transparent_crc
+-- Compiling module main
+-- Compiling module ram_dual_port
+-- Compiling module rom_dual_port
+-- Compiling module ML605
+-- Compiling module de4
+-- Compiling module de2
+-- Compiling module circuit_start_control
+-- Compiling module hex_digits
+-- Compiling module main_tb
+-- Scanning library file '../../../../ip/libs/altera/220model.v'
+-- Compiling module lpm_divide
+-- Scanning library file '../../../../ip/libs/altera/altera_mf.v'
+-- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
+-- Scanning library file '../../../../ip/libs/altera/altera_primitives.v'
+-- Scanning library file '../../../../ip/libs/altera/altfp_adder_14.v'
+-- Scanning library file '../../../../ip/libs/altera/altfp_adder64_14.v'
+-- Scanning library file '../../../../ip/libs/altera/altfp_subtractor_14.v'
+-- Scanning library file '../../../../ip/libs/altera/altfp_subtractor64_14.v'
+-- Scanning library file '../../../../ip/libs/altera/altfp_multiplier_11.v'
+-- Scanning library file '../../../../ip/libs/altera/altfp_multiplier64_11.v'
+-- Scanning library file '../../../../ip/libs/altera/altfp_divider_33.v'
+-- Scanning library file '../../../../ip/libs/altera/altfp_divider64_61.v'
+-- Scanning library file '../../../../ip/libs/altera/altfp_compare32_1.v'
+-- Scanning library file '../../../../ip/libs/altera/altfp_compare64_1.v'
+-- Scanning library file '../../../../ip/libs/altera/altfp_truncate_3.v'
+-- Scanning library file '../../../../ip/libs/altera/altfp_extend_2.v'
+-- Scanning library file '../../../../ip/libs/altera/altfp_sitofp32_6.v'
+-- Scanning library file '../../../../ip/libs/altera/altfp_sitofp64_6.v'
+-- Scanning library file '../../../../ip/libs/altera/altfp_fptosi32_6.v'
+-- Scanning library file '../../../../ip/libs/altera/altfp_fptosi64_6.v'
+-- Scanning library file '../../../../serial_divider/SerialDivider.v'
+-- Scanning library file '../../../../ip/libs/altera/altfp_adder_13.v'
+-- Scanning library file '../../../../ip/libs/altera/altfp_adder64_13.v'
+-- Scanning library file '../../../../ip/libs/altera/sgate.v'
+-- Scanning library file '../../../../ip/libs/generic/div_unsigned.v'
+-- Scanning library file '../../../../ip/libs/generic/div_signed.v'
+-- Scanning library file '../../../../ip/libs/altera/cyclonev_atoms.v'
+-- Scanning library file '../../../../ip/libs/altera/cyclonev_hssi_atoms.v'
+-- Scanning library file '../../../../ip/libs/altera/cyclonev_pcie_hip_atoms.v'
+-- Scanning library file '../../../../ip/libs/altera/220model.v'
+-- Compiling module LPM_HINT_EVALUATION
+-- Scanning library file '../../../../ip/libs/altera/altera_mf.v'
+-- Scanning library file '../../../../ip/libs/altera/altera_primitives.v'
+-- Scanning library file '../../../../ip/libs/altera/altfp_adder_14.v'
+-- Scanning library file '../../../../ip/libs/altera/altfp_adder64_14.v'
+-- Scanning library file '../../../../ip/libs/altera/altfp_subtractor_14.v'
+-- Scanning library file '../../../../ip/libs/altera/altfp_subtractor64_14.v'
+-- Scanning library file '../../../../ip/libs/altera/altfp_multiplier_11.v'
+-- Scanning library file '../../../../ip/libs/altera/altfp_multiplier64_11.v'
+-- Scanning library file '../../../../ip/libs/altera/altfp_divider_33.v'
+-- Scanning library file '../../../../ip/libs/altera/altfp_divider64_61.v'
+-- Scanning library file '../../../../ip/libs/altera/altfp_compare32_1.v'
+-- Scanning library file '../../../../ip/libs/altera/altfp_compare64_1.v'
+-- Scanning library file '../../../../ip/libs/altera/altfp_truncate_3.v'
+-- Scanning library file '../../../../ip/libs/altera/altfp_extend_2.v'
+-- Scanning library file '../../../../ip/libs/altera/altfp_sitofp32_6.v'
+-- Scanning library file '../../../../ip/libs/altera/altfp_sitofp64_6.v'
+-- Scanning library file '../../../../ip/libs/altera/altfp_fptosi32_6.v'
+-- Scanning library file '../../../../ip/libs/altera/altfp_fptosi64_6.v'
+-- Scanning library file '../../../../serial_divider/SerialDivider.v'
+-- Scanning library file '../../../../ip/libs/altera/altfp_adder_13.v'
+-- Scanning library file '../../../../ip/libs/altera/altfp_adder64_13.v'
+-- Scanning library file '../../../../ip/libs/altera/sgate.v'
+-- Scanning library file '../../../../ip/libs/generic/div_unsigned.v'
+-- Scanning library file '../../../../ip/libs/generic/div_signed.v'
+-- Scanning library file '../../../../ip/libs/altera/cyclonev_atoms.v'
+-- Scanning library file '../../../../ip/libs/altera/cyclonev_hssi_atoms.v'
+-- Scanning library file '../../../../ip/libs/altera/cyclonev_pcie_hip_atoms.v'
+
+Top level modules:
+	ML605
+	de4
+	circuit_start_control
+	main_tb
+End time: 14:59:18 on Jun 13,2017, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0
+vlog -sv ../../../../ip/libs/altera/altera_lnsim.sv -sv ../../../../ip/libs/altera/cyclonev_hps_atoms.sv
+Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+Start time: 14:59:18 on Jun 13,2017
+vlog -sv ../../../../ip/libs/altera/altera_lnsim.sv -sv ../../../../ip/libs/altera/cyclonev_hps_atoms.sv 
+-- Compiling package altera_lnsim_functions
+-- Compiling module altera_pll
+-- Importing package altera_lnsim_functions
+-- Compiling module dps_extra_kick
+-- Compiling module dprio_init
+-- Compiling module pll_dps_lcell_comb
+-- Compiling module altera_stratixv_pll
+-- Compiling module altera_arriav_pll
+-- Compiling module altera_arriavgz_pll
+-- Compiling module altera_cyclonev_pll
+-- Compiling package altera_generic_pll_functions
+-- Compiling module generic_pll
+-- Importing package altera_generic_pll_functions
+-- Compiling module generic_cdr
+-- Compiling module common_28nm_ram_pulse_generator
+-- Compiling module common_28nm_ram_register
+-- Compiling module common_28nm_ram_block
+-- Compiling module generic_m20k
+-- Compiling module generic_m10k
+-- Compiling module common_28nm_mlab_cell_pulse_generator
+-- Compiling module common_28nm_mlab_latch
+-- Compiling module common_28nm_mlab_cell_core
+-- Compiling module common_porta_latches
+-- Compiling module generic_28nm_hp_mlab_cell_impl
+-- Compiling module common_porta_registers
+-- Compiling module generic_28nm_lc_mlab_cell_impl
+-- Compiling module generic_mux
+-- Compiling module generic_device_pll
+-- Compiling module altera_mult_add
+-- Compiling module altera_mult_add_rtl
+-- Compiling module ama_signed_extension_function
+-- Compiling module ama_dynamic_signed_function
+-- Compiling module ama_register_function
+-- Compiling module ama_register_with_ext_function
+-- Compiling module ama_data_split_reg_ext_function
+-- Compiling module ama_coef_reg_ext_function
+-- Compiling module ama_adder_function
+-- Compiling module ama_multiplier_function
+-- Compiling module ama_preadder_function
+-- Compiling module ama_accumulator_function
+-- Compiling module ama_systolic_adder_function
+-- Compiling module ama_scanchain
+-- Compiling module altera_pll_reconfig_tasks
+-- Compiling module cyclonev_hps_interface_hps2fpga
+
+Top level modules:
+	altera_pll
+	generic_cdr
+	generic_m20k
+	generic_m10k
+	common_porta_latches
+	generic_28nm_hp_mlab_cell_impl
+	generic_28nm_lc_mlab_cell_impl
+	generic_mux
+	generic_device_pll
+	altera_mult_add
+	altera_pll_reconfig_tasks
+	cyclonev_hps_interface_hps2fpga
+End time: 14:59:18 on Jun 13,2017, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+vsim  -c -do "run 7000000000000000ns; exit;" work.main_tb
+Reading pref.tcl
+
+# 10.3d
+
+# vsim -c -do "run 7000000000000000ns; exit;" work.main_tb 
+# Start time: 14:59:19 on Jun 13,2017
+# Loading work.main_tb
+# Loading work.top
+# Loading work.memory_controller
+# Loading work.ram_dual_port
+# Loading work.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading work.rom_dual_port
+# Loading work.main
+# Loading work.platform_main_begin
+# Loading work.crc32_gentab
+# Loading work.func_1
+# Loading work.legup_memcpy_2
+# Loading work.safe_unary_minus_func_int16_t_s
+# Loading work.safe_mul_func_int8_t_s_s
+# Loading work.safe_add_func_int8_t_s_s
+# Loading work.safe_lshift_func_uint16_t_u_s
+# Loading work.func_16
+# Loading work.legup_memcpy_4
+# Loading work.safe_add_func_int16_t_s_s
+# Loading work.safe_div_func_int32_t_s_s
+# Loading work.lpm_divide
+# Loading work.LPM_HINT_EVALUATION
+# Loading work.safe_lshift_func_uint8_t_u_u
+# Loading work.safe_mod_func_int8_t_s_s
+# Loading work.safe_rshift_func_uint8_t_u_s
+# Loading work.safe_lshift_func_uint8_t_u_s
+# Loading work.safe_add_func_uint8_t_u_u
+# Loading work.safe_mod_func_uint8_t_u_u
+# Loading work.safe_sub_func_int32_t_s_s
+# Loading work.safe_div_func_uint16_t_u_u
+# Loading work.safe_sub_func_int8_t_s_s
+# Loading work.safe_sub_func_int16_t_s_s
+# Loading work.safe_div_func_int8_t_s_s
+# Loading work.safe_mod_func_int16_t_s_s
+# Loading work.safe_lshift_func_int16_t_s_u
+# Loading work.safe_sub_func_uint8_t_u_u
+# Loading work.func_10
+# Loading work.func_4
+# Loading work.transparent_crc
+# Loading work.crc32_8bytes
+# Loading work.crc32_byte
+# Loading work.platform_main_end
+# ** Warning: (vsim-3017) deleteThis0.v(124): [TFMPC] - Too few port connections. Expected 22, found 20.
+#         Region: /main_tb/top_inst/main_inst
+# ** Warning: (vsim-3722) deleteThis0.v(124): [TFMPC] - Missing connection for port 'arg_argc'.
+# ** Warning: (vsim-3722) deleteThis0.v(124): [TFMPC] - Missing connection for port 'arg_argv'.
+# ** Warning: Design size of 10972 statements exceeds ModelSim Altera Starter recommended capacity.
+# Expect performance to be adversely affected.
+# run 7000000000000000ns

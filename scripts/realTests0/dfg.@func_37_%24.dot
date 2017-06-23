@@ -1,0 +1,22 @@
+digraph {
+Node0x2da29b0[label="  %25 = call signext i16 @safe_lshift_fu..."];
+Node0x2da29b0 -> Node0x2da29b0[label="D:0.00ns L:1",color=blue];
+Node0x2da2c50[label="  %28 = load i32* %27, align 4"];
+Node0x2da29b0 -> Node0x2da2c50[label="D:0.00ns L:1",color=red];
+Node0x2da3020[label="  %32 = load i32* %31, align 4"];
+Node0x2da29b0 -> Node0x2da3020[label="D:0.00ns L:1",color=red];
+Node0x2da2a90[label="  %26 = sext i16 %25 to i32"];
+Node0x2da2a90 -> Node0x2da2a90[label="D:0.00ns L:0",color=blue];
+Node0x2da2b70[label="  %27 = getelementptr inbounds [6 x i32]..."];
+Node0x2da2b70 -> Node0x2da2b70[label="D:0.00ns L:0",color=blue];
+Node0x2da2c50 -> Node0x2da2c50[label="D:0.00ns L:2",color=blue];
+Node0x2da2d30[label="  %29 = icmp ule i32 %26, %28"];
+Node0x2da2d30 -> Node0x2da2d30[label="D:3.04ns L:0",color=blue];
+Node0x2da2e60[label="  %30 = zext i1 %29 to i32"];
+Node0x2da2e60 -> Node0x2da2e60[label="D:0.00ns L:0",color=blue];
+Node0x2da2f40[label="  %31 = getelementptr inbounds [6 x i32]..."];
+Node0x2da2f40 -> Node0x2da2f40[label="D:0.00ns L:0",color=blue];
+Node0x2da3020 -> Node0x2da3020[label="D:0.00ns L:2",color=blue];
+Node0x2da3100[label="  %33 = icmp eq i32 %30, %32"];
+Node0x2da3100 -> Node0x2da3100[label="D:2.49ns L:0",color=blue];
+}

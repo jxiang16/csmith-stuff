@@ -1,0 +1,11 @@
+digraph {
+Node0x3c45360[label="  %l_50 = alloca [10 x i32], align 4"];
+Node0x3c45360 -> Node0x3c45360[label="D:0.00ns L:0",color=blue];
+Node0x3c45360 -> Node0x3c45360[label="D:0.00ns L:0",color=blue];
+Node0x3c45360 -> Node0x3c45360[label="D:0.00ns L:0",color=blue];
+Node0x3c45360 -> Node0x3c45360[label="D:0.00ns L:0",color=blue];
+Node0x3c45360 -> Node0x3c45360[label="D:0.00ns L:0",color=blue];
+Node0x3c45360 -> Node0x3c45360[label="D:0.00ns L:0",color=blue];
+Node0x3c45850[label="  %1 = bitcast [10 x i32]* %l_50 to i8*"];
+Node0x3c45850 -> Node0x3c45850[label="D:0.00ns L:0",color=blue];
+}

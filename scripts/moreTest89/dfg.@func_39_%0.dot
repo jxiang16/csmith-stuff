@@ -1,0 +1,8 @@
+digraph {
+Node0x33acf10[label="  %1 = load volatile i8* @g_51, align 1"];
+Node0x33acf10 -> Node0x33acf10[label="D:0.00ns L:2",color=blue];
+Node0x33a4290[label="  store volatile i8 %2, i8* @g_51, align..."];
+Node0x33acf10 -> Node0x33a4290[label="D:0.00ns L:2",color=red];
+Node0x33ad400[label="  %2 = add i8 %1, -1"];
+Node0x33ad400 -> Node0x33ad400[label="D:1.88ns L:0",color=blue];
+}

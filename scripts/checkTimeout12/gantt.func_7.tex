@@ -1,0 +1,240 @@
+\documentclass[landscape]{article}
+\usepackage{gantt}
+\pagestyle{empty}
+\begin{document}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{27}{24}
+\begin{ganttitle}
+\numtitle{0}{1}{23}{1}
+\end{ganttitle}
+\ganttbar{  \%l\_51 = alloca [8 x i16], align 2}{1}{1}
+\ganttcon{2}{1}{1}{8}
+\ganttcon{2}{1}{1}{3}
+\ganttbar{  \%l\_76 = alloca [2 x [8 x i32]], align 4}{1}{1}
+\ganttcon{2}{2}{1}{4}
+\ganttbar{  \%1 = bitcast [8 x i16]* \%l\_51 to i8*}{1}{1}
+\ganttcon{2}{3}{2}{10}
+\ganttbar{  \%2 = bitcast [2 x [8 x i32]]* \%l\_76 to i8*}{1}{1}
+\ganttcon{2}{4}{4}{11}
+\ganttbar{  \%3 = add i16 \%p\_9, -1}{1}{1}
+\ganttcon{2}{5}{1}{6}
+\ganttbar{  \%4 = icmp ult i16 \%3, 6}{1}{1}
+\ganttcon{2}{6}{1}{7}
+\ganttbar{  \%5 = zext i1 \%4 to i32}{1}{1}
+\ganttcon{2}{7}{6}{12}
+\ganttbar{  \%13 = getelementptr inbounds [8 x i16]* \%l\_51, i32 0, i32 4}{1}{1}
+\ganttcon{2}{8}{13}{19}
+\ganttbar{  br i1 true, label \%23, label \%22}{1}{1}
+\ganttbar{  call void @legup\_memcpy\_2(i8* \%1, i8* bitcast ([8 x i16]* @func\_7.l\_51 to...}{2}{1}
+\ganttbar{  call void @legup\_memcpy\_4(i8* \%2, i8* bitcast ([2 x [8 x i32]]* @func\_7.l\...}{4}{1}
+\ganttbar{  \%6 = call signext i8 @safe\_lshift\_func\_int8\_t\_s\_s(i8 signext 6, i32 \%5...}{6}{1}
+\ganttcon{7}{12}{7}{13}
+\ganttbar{  \%7 = zext i8 \%6 to i32}{7}{1}
+\ganttbar{  \%8 = call signext i8 @safe\_lshift\_func\_int8\_t\_s\_u(i8 signext -1, i32 0)...}{8}{1}
+\ganttcon{9}{14}{9}{15}
+\ganttbar{  \%9 = sext i8 \%8 to i16}{9}{1}
+\ganttcon{10}{15}{18}{23}
+\ganttbar{  \%10 = load i32* getelementptr inbounds ([7 x i32]* @g\_38, i32 0, i32 2), ali...}{9}{2}
+\ganttcon{11}{16}{11}{17}
+\ganttbar{  \%11 = trunc i32 \%10 to i8}{11}{1}
+\ganttcon{12}{17}{12}{18}
+\ganttbar{  \%12 = call zeroext i8 @safe\_rshift\_func\_uint8\_t\_u\_u(i8 zeroext \%11, i3...}{12}{1}
+\ganttcon{13}{18}{16}{21}
+\ganttbar{  \%14 = load i16* \%13, align 2}{13}{2}
+\ganttcon{15}{19}{15}{20}
+\ganttbar{  \%15 = trunc i16 \%14 to i8}{15}{1}
+\ganttcon{16}{20}{16}{21}
+\ganttbar{  \%16 = call zeroext i8 @safe\_add\_func\_uint8\_t\_u\_u(i8 zeroext \%12, i8 ze...}{16}{1}
+\ganttcon{17}{21}{17}{22}
+\ganttbar{  \%17 = zext i8 \%16 to i16}{17}{1}
+\ganttcon{18}{22}{18}{23}
+\ganttbar{  \%18 = call signext i16 @safe\_mul\_func\_int16\_t\_s\_s(i16 signext \%9, i16 ...}{18}{1}
+\ganttcon{19}{23}{20}{24}
+\ganttbar{  \%19 = call signext i16 @safe\_lshift\_func\_int16\_t\_s\_s(i16 signext \%18, ...}{20}{1}
+\ganttcon{21}{24}{21}{25}
+\ganttbar{  \%20 = zext i16 \%19 to i32}{21}{1}
+\ganttbar{  \%21 = load i32* getelementptr inbounds ([7 x i32]* @g\_38, i32 0, i32 2), ali...}{21}{2}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{2}{2}
+\begin{ganttitle}
+\numtitle{0}{1}{1}{1}
+\end{ganttitle}
+\ganttbar{  br label \%23}{1}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{12}{2}
+\begin{ganttitle}
+\numtitle{0}{1}{1}{1}
+\end{ganttitle}
+\ganttbar{  \%p\_10.not = and i32 \%p\_10, -2}{1}{1}
+\ganttcon{2}{1}{1}{2}
+\ganttbar{  \%24 = xor i32 \%p\_10.not, -2}{1}{1}
+\ganttcon{2}{2}{1}{3}
+\ganttbar{  \%25 = icmp slt i32 \%24, 26199}{1}{1}
+\ganttcon{2}{3}{1}{4}
+\ganttbar{  \%26 = zext i1 \%25 to i32}{1}{1}
+\ganttcon{2}{4}{1}{5}
+\ganttbar{  \%27 = icmp eq i32 \%26, \%p\_10}{1}{1}
+\ganttcon{2}{5}{1}{6}
+\ganttbar{  \%28 = zext i1 \%27 to i32}{1}{1}
+\ganttcon{2}{6}{1}{7}
+\ganttbar{  \%29 = icmp sge i32 \%28, \%p\_10}{1}{1}
+\ganttcon{2}{7}{1}{8}
+\ganttbar{  \%30 = zext i1 \%29 to i32}{1}{1}
+\ganttcon{2}{8}{1}{9}
+\ganttbar{  \%31 = and i32 \%21, \%30}{1}{1}
+\ganttcon{2}{9}{1}{10}
+\ganttbar{  \%32 = icmp eq i32 \%31, 0}{1}{1}
+\ganttcon{2}{10}{1}{11}
+\ganttbar{  br i1 \%32, label \%34, label \%33}{1}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{2}{2}
+\begin{ganttitle}
+\numtitle{0}{1}{1}{1}
+\end{ganttitle}
+\ganttbar{  br label \%34}{1}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{16}{13}
+\begin{ganttitle}
+\numtitle{0}{1}{12}{1}
+\end{ganttitle}
+\ganttbar{  \%35 = phi i16 [ -10, \%23 ], [ -9, \%33 ]}{1}{1}
+\ganttcon{2}{1}{2}{3}
+\ganttbar{  \%42 = getelementptr inbounds [2 x [8 x i32]]* \%l\_76, i32 0, i32 0, i32 3}{1}{1}
+\ganttcon{2}{2}{9}{11}
+\ganttcon{2}{2}{7}{9}
+\ganttbar{  \%36 = call zeroext i16 @safe\_rshift\_func\_uint16\_t\_u\_u(i16 zeroext \%35,...}{2}{1}
+\ganttbar{  \%37 = load i32* @g\_37, align 4}{3}{2}
+\ganttcon{5}{4}{5}{5}
+\ganttbar{  \%38 = trunc i32 \%37 to i8}{5}{1}
+\ganttcon{6}{5}{6}{6}
+\ganttbar{  \%39 = call zeroext i8 @safe\_add\_func\_uint8\_t\_u\_u(i8 zeroext \%38, i8 ze...}{6}{1}
+\ganttcon{7}{6}{7}{7}
+\ganttbar{  \%40 = zext i8 \%39 to i32}{7}{1}
+\ganttcon{8}{7}{7}{8}
+\ganttbar{  \%41 = and i32 \%20, \%40}{7}{1}
+\ganttcon{8}{8}{9}{10}
+\ganttbar{  \%43 = load i32* \%42, align 4}{7}{2}
+\ganttcon{9}{9}{9}{10}
+\ganttbar{  \%44 = xor i32 \%43, \%41}{9}{1}
+\ganttcon{10}{10}{9}{12}
+\ganttcon{10}{10}{9}{11}
+\ganttbar{  store i32 \%44, i32* \%42, align 4}{9}{1}
+\ganttbar{  \%45 = trunc i32 \%44 to i16}{9}{1}
+\ganttcon{10}{12}{11}{13}
+\ganttbar{  \%46 = call zeroext i16 @safe\_lshift\_func\_uint16\_t\_u\_u(i16 zeroext \%45,...}{11}{1}
+\ganttcon{12}{13}{12}{14}
+\ganttbar{  \%47 = icmp eq i16 \%46, 0}{12}{1}
+\ganttcon{13}{14}{12}{15}
+\ganttbar{  br i1 \%47, label \%48, label \%52}{12}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{5}{4}
+\begin{ganttitle}
+\numtitle{0}{1}{3}{1}
+\end{ganttitle}
+\ganttbar{  \%49 = getelementptr inbounds [8 x i16]* \%l\_51, i32 0, i32 2}{1}{1}
+\ganttcon{2}{1}{1}{2}
+\ganttbar{  \%50 = load i16* \%49, align 2}{1}{2}
+\ganttcon{3}{2}{3}{4}
+\ganttbar{  br label \%52}{1}{1}
+\ganttbar{  \%51 = icmp ne i16 \%50, 0}{3}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{32}{21}
+\begin{ganttitle}
+\numtitle{0}{1}{20}{1}
+\end{ganttitle}
+\ganttbar{  \%53 = phi i1 [ true, \%34 ], [ \%51, \%48 ]}{1}{1}
+\ganttcon{2}{1}{1}{2}
+\ganttbar{  \%54 = zext i1 \%53 to i32}{1}{1}
+\ganttcon{2}{2}{1}{3}
+\ganttbar{  \%55 = icmp sge i32 \%54, \%p\_10}{1}{1}
+\ganttcon{2}{3}{1}{4}
+\ganttbar{  \%56 = zext i1 \%55 to i32}{1}{1}
+\ganttcon{2}{4}{1}{5}
+\ganttbar{  \%57 = xor i32 \%56, \%p\_10}{1}{1}
+\ganttcon{2}{5}{1}{6}
+\ganttbar{  \%58 = icmp ult i32 \%57, -1805883725}{1}{1}
+\ganttcon{2}{6}{1}{7}
+\ganttbar{  \%59 = zext i1 \%58 to i32}{1}{1}
+\ganttcon{2}{7}{3}{12}
+\ganttbar{  \%60 = load i32* @g\_77, align 4}{1}{2}
+\ganttcon{3}{8}{3}{12}
+\ganttbar{  \%62 = load i32* getelementptr inbounds ([7 x i32]* @g\_38, i32 0, i32 0), ali...}{1}{2}
+\ganttcon{3}{9}{5}{14}
+\ganttbar{  \%73 = zext i16 \%3 to i32}{1}{1}
+\ganttcon{2}{10}{15}{25}
+\ganttbar{  \%77 = getelementptr inbounds [8 x i16]* \%l\_51, i32 0, i32 5}{1}{1}
+\ganttcon{2}{11}{16}{27}
+\ganttbar{  \%61 = and i32 \%60, \%59}{3}{1}
+\ganttcon{4}{12}{5}{14}
+\ganttcon{4}{12}{3}{13}
+\ganttbar{  store i32 \%61, i32* @g\_77, align 4}{3}{1}
+\ganttbar{  \%63 = call i32 @safe\_sub\_func\_int32\_t\_s\_s(i32 \%61, i32 \%62) #3}{5}{1}
+\ganttcon{6}{14}{6}{15}
+\ganttbar{  \%64 = and i32 \%7, \%63}{6}{1}
+\ganttcon{7}{15}{6}{16}
+\ganttbar{  \%65 = trunc i32 \%64 to i8}{6}{1}
+\ganttcon{7}{16}{7}{17}
+\ganttbar{  \%66 = call signext i8 @safe\_add\_func\_int8\_t\_s\_s(i8 signext \%65, i8 sig...}{7}{1}
+\ganttcon{8}{17}{8}{18}
+\ganttbar{  \%67 = zext i8 \%66 to i32}{8}{1}
+\ganttcon{9}{18}{8}{19}
+\ganttbar{  \%68 = and i32 \%67, 7}{8}{1}
+\ganttcon{9}{19}{8}{20}
+\ganttbar{  \%69 = icmp ne i32 \%68, \%p\_10}{8}{1}
+\ganttcon{9}{20}{8}{21}
+\ganttbar{  \%70 = zext i1 \%69 to i32}{8}{1}
+\ganttcon{9}{21}{11}{23}
+\ganttbar{  \%71 = load volatile i32* @g\_22, align 4}{8}{2}
+\ganttcon{10}{22}{11}{23}
+\ganttbar{  \%72 = call i32 @safe\_mod\_func\_uint32\_t\_u\_u(i32 \%70, i32 \%71) #3}{11}{1}
+\ganttbar{  \%74 = load i32* getelementptr inbounds ([7 x i32]* @g\_38, i32 0, i32 2), ali...}{12}{2}
+\ganttcon{14}{24}{15}{25}
+\ganttbar{  \%75 = call i32 @safe\_sub\_func\_int32\_t\_s\_s(i32 \%73, i32 \%74) #3}{15}{1}
+\ganttcon{16}{25}{16}{26}
+\ganttbar{  \%76 = trunc i32 \%75 to i8}{16}{1}
+\ganttcon{17}{26}{19}{29}
+\ganttbar{  \%78 = load i16* \%77, align 2}{16}{2}
+\ganttcon{18}{27}{18}{28}
+\ganttbar{  \%79 = trunc i16 \%78 to i8}{18}{1}
+\ganttcon{19}{28}{19}{29}
+\ganttbar{  \%80 = call zeroext i8 @safe\_div\_func\_uint8\_t\_u\_u(i8 zeroext \%76, i8 ze...}{19}{1}
+\ganttcon{20}{29}{20}{30}
+\ganttbar{  \%81 = icmp eq i8 \%80, 0}{20}{1}
+\ganttcon{21}{30}{20}{31}
+\ganttbar{  br i1 \%81, label \%83, label \%82}{20}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{2}{2}
+\begin{ganttitle}
+\numtitle{0}{1}{1}{1}
+\end{ganttitle}
+\ganttbar{  br label \%83}{1}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{5}{3}
+\begin{ganttitle}
+\numtitle{0}{1}{2}{1}
+\end{ganttitle}
+\ganttbar{  \%84 = phi i16 [ 0, \%52 ], [ 1, \%82 ]}{1}{1}
+\ganttcon{2}{1}{1}{2}
+\ganttbar{  store i16 \%84, i16* getelementptr inbounds ([6 x i16]* @g\_78, i32 0, i32 2),...}{1}{1}
+\ganttbar{  \%85 = trunc i16 \%3 to i8}{1}{1}
+\ganttcon{2}{3}{2}{4}
+\ganttbar{  ret i8 \%85}{2}{1}
+\end{gantt}
+\end{figure}
+\end{document}

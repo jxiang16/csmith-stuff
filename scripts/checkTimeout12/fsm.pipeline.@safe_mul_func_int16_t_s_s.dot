@@ -1,0 +1,9 @@
+digraph {
+Node0x2ba2880[label="LEGUP_F_safe_mul_func_int16_t_s_s_BB__0"];
+Node0x2b84af0[label="LEGUP"];
+Node0x2b84af0 -> Node0x2ba2880[label="<null>"];
+Node0x2b84af0 -> Node0x2b84af0[label="~<null>"];
+Node0x2b6f6a0[label="LEGUP_F_safe_mul_func_int16_t_s_s_BB__0"];
+Node0x2ba2880 -> Node0x2b6f6a0;
+Node0x2b6f6a0 -> Node0x2b84af0;
+}

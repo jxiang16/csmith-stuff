@@ -1,0 +1,31 @@
+digraph {
+Node0x4045890[label="  %1 = load i32* @g_2, align 4"];
+Node0x4045890 -> Node0x4045890[label="D:0.00ns L:2",color=blue];
+Node0x40ce750[label="  %6 = call zeroext i16 @func_24(i16 zer..."];
+Node0x4045890 -> Node0x40ce750[label="D:0.00ns L:2",color=red];
+Node0x4045970[label="  %2 = trunc i32 %1 to i16"];
+Node0x4045970 -> Node0x4045970[label="D:0.00ns L:0",color=blue];
+Node0x40ce480[label="  %3 = load i8* @g_12, align 1"];
+Node0x40ce480 -> Node0x40ce480[label="D:0.00ns L:2",color=blue];
+Node0x40ce480 -> Node0x40ce750[label="D:0.00ns L:2",color=red];
+Node0x40ce590[label="  %4 = zext i8 %3 to i32"];
+Node0x40ce590 -> Node0x40ce590[label="D:0.00ns L:0",color=blue];
+Node0x40ce670[label="  %5 = trunc i32 %p_22 to i8"];
+Node0x40ce670 -> Node0x40ce670[label="D:0.00ns L:0",color=blue];
+Node0x40ce830[label="  %7 = load i32* getelementptr inbounds ..."];
+Node0x40ce750 -> Node0x40ce830[label="D:0.00ns L:1",color=red];
+Node0x40cea50[label="  store i32 %8, i32* getelementptr inbou..."];
+Node0x40ce750 -> Node0x40cea50[label="D:0.00ns L:1",color=red];
+Node0x40ceb30[label="  %9 = load i32* getelementptr inbounds ..."];
+Node0x40ce750 -> Node0x40ceb30[label="D:0.00ns L:1",color=red];
+Node0x40cec10[label="  %10 = load i32* @g_2, align 4"];
+Node0x40ce750 -> Node0x40cec10[label="D:0.00ns L:1",color=red];
+Node0x40ce830 -> Node0x40ce830[label="D:0.00ns L:2",color=blue];
+Node0x40ce830 -> Node0x40cea50[label="D:0.00ns L:2",color=red];
+Node0x40ce910[label="  %8 = xor i32 %7, 5680"];
+Node0x40ce910 -> Node0x40ce910[label="D:0.91ns L:0",color=blue];
+Node0x40ceb30 -> Node0x40ceb30[label="D:0.00ns L:2",color=blue];
+Node0x40cec10 -> Node0x40cec10[label="D:0.00ns L:2",color=blue];
+Node0x40cecf0[label="  %11 = icmp eq i32 %9, %10"];
+Node0x40cecf0 -> Node0x40cecf0[label="D:2.49ns L:0",color=blue];
+}

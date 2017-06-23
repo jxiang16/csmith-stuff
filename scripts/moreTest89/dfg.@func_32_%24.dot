@@ -1,0 +1,10 @@
+digraph {
+Node0x3398c00[label="  %25 = sext i8 %p_33 to i16"];
+Node0x3398c00 -> Node0x3398c00[label="D:0.00ns L:0",color=blue];
+Node0x3398ce0[label="  %26 = call signext i16 @safe_div_func_..."];
+Node0x3398ce0 -> Node0x3398ce0[label="D:0.00ns L:1",color=blue];
+Node0x3398ea0[label="  %28 = call signext i8 @safe_rshift_fun..."];
+Node0x3398ce0 -> Node0x3398ea0[label="D:0.00ns L:1",color=red];
+Node0x3398dc0[label="  %27 = trunc i16 %26 to i8"];
+Node0x3398dc0 -> Node0x3398dc0[label="D:0.00ns L:0",color=blue];
+}

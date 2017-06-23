@@ -1,0 +1,12 @@
+Depth = 5;
+Width = 8;
+Address_radix = dec;
+Data_radix = hex;
+Content
+Begin
+0: 67;	-- str6[0] = 103
+1: 5F;	-- str6[1] = 95
+2: 37;	-- str6[2] = 55
+3: 39;	-- str6[3] = 57
+4: 00;	-- str6[4] = 0
+End;

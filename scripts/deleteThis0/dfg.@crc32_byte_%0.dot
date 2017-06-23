@@ -1,0 +1,21 @@
+digraph {
+Node0x3bbd0f0[label="  %1 = load i32* @crc32_context, align 4"];
+Node0x3bbd0f0 -> Node0x3bbd0f0[label="D:0.00ns L:2",color=blue];
+Node0x3bbd0f0 -> Node0x3bbd0f0[label="D:0.00ns L:2",color=blue];
+Node0x3bbb610[label="  store i32 %7, i32* @crc32_context, ali..."];
+Node0x3bbd0f0 -> Node0x3bbb610[label="D:0.00ns L:2",color=red];
+Node0x3bbd290[label="  %2 = lshr i32 %1, 8"];
+Node0x3bbd290 -> Node0x3bbd290[label="D:0.00ns L:0",color=blue];
+Node0x3bbd370[label="  %3 = zext i8 %b to i32"];
+Node0x3bbd370 -> Node0x3bbd370[label="D:0.00ns L:0",color=blue];
+Node0x3bbd450[label="  %.masked = and i32 %1, 255"];
+Node0x3bbd450 -> Node0x3bbd450[label="D:0.00ns L:0",color=blue];
+Node0x3bbd530[label="  %4 = xor i32 %.masked, %3"];
+Node0x3bbd530 -> Node0x3bbd530[label="D:0.91ns L:0",color=blue];
+Node0x3bbb370[label="  %5 = getelementptr inbounds [256 x i32..."];
+Node0x3bbb370 -> Node0x3bbb370[label="D:20.00ns L:0",color=blue];
+Node0x3bbb450[label="  %6 = load i32* %5, align 4"];
+Node0x3bbb450 -> Node0x3bbb450[label="D:0.00ns L:2",color=blue];
+Node0x3bbb530[label="  %7 = xor i32 %2, %6"];
+Node0x3bbb530 -> Node0x3bbb530[label="D:0.91ns L:0",color=blue];
+}

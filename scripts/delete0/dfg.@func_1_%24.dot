@@ -1,0 +1,27 @@
+digraph {
+Node0x40d3fc0[label="  %25 = load i32* %scevgep3, align 4"];
+Node0x40d3fc0 -> Node0x40d3fc0[label="D:0.00ns L:2",color=blue];
+Node0x40d3fc0 -> Node0x40d3fc0[label="D:0.00ns L:2",color=blue];
+Node0x40d46c0[label="  %32 = call signext i8 @func_19(i16 sig..."];
+Node0x40d3fc0 -> Node0x40d46c0[label="D:0.00ns L:2",color=red];
+Node0x40d40a0[label="  %26 = trunc i32 %25 to i8"];
+Node0x40d40a0 -> Node0x40d40a0[label="D:0.00ns L:0",color=blue];
+Node0x40d40a0 -> Node0x40d40a0[label="D:0.00ns L:0",color=blue];
+Node0x40d4180[label="  store i8 %26, i8* @g_12, align 1"];
+Node0x40d4180 -> Node0x40d46c0[label="D:20.00ns L:1",color=red];
+Node0x40d4260[label="  %27 = trunc i32 %25 to i16"];
+Node0x40d4260 -> Node0x40d4260[label="D:0.00ns L:0",color=blue];
+Node0x40d4340[label="  %28 = and i16 %27, 255"];
+Node0x40d4340 -> Node0x40d4340[label="D:0.00ns L:0",color=blue];
+Node0x40d4420[label="  %29 = getelementptr inbounds [2 x i32]..."];
+Node0x40d4420 -> Node0x40d4420[label="D:0.00ns L:0",color=blue];
+Node0x40d4500[label="  %30 = load i32* %29, align 4"];
+Node0x40d4500 -> Node0x40d4500[label="D:0.00ns L:2",color=blue];
+Node0x40d4500 -> Node0x40d46c0[label="D:0.00ns L:2",color=red];
+Node0x40d45e0[label="  %31 = load i32* @g_2, align 4"];
+Node0x40d45e0 -> Node0x40d45e0[label="D:0.00ns L:2",color=blue];
+Node0x40d45e0 -> Node0x40d46c0[label="D:0.00ns L:2",color=red];
+Node0x40d46c0 -> Node0x40d46c0[label="D:0.00ns L:1",color=blue];
+Node0x40d19a0[label="  %33 = icmp eq i8 %32, 0"];
+Node0x40d19a0 -> Node0x40d19a0[label="D:1.79ns L:0",color=blue];
+}

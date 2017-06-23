@@ -1,0 +1,16 @@
+digraph {
+Node0x31a49b0[label="  %109 = zext i8 %107 to i32"];
+Node0x31a49b0 -> Node0x31a49b0[label="D:0.00ns L:0",color=blue];
+Node0x31a4a90[label="  %110 = getelementptr inbounds [7 x i8]..."];
+Node0x31a4a90 -> Node0x31a4a90[label="D:0.00ns L:0",color=blue];
+Node0x31a4b70[label="  %111 = load i8* %110, align 1"];
+Node0x31a4b70 -> Node0x31a4b70[label="D:0.00ns L:2",color=blue];
+Node0x31a4c50[label="  %112 = sext i8 %111 to i32"];
+Node0x31a4c50 -> Node0x31a4c50[label="D:0.00ns L:0",color=blue];
+Node0x31a4d30[label="  %113 = and i32 %109, %112"];
+Node0x31a4d30 -> Node0x31a4d30[label="D:0.87ns L:0",color=blue];
+Node0x31a4e10[label="  %114 = and i32 %l_42.1, %113"];
+Node0x31a4e10 -> Node0x31a4e10[label="D:0.87ns L:0",color=blue];
+Node0x31a4ef0[label="  %indvar.next = add i32 %indvar, 1"];
+Node0x31a4ef0 -> Node0x31a4ef0[label="D:2.50ns L:0",color=blue];
+}

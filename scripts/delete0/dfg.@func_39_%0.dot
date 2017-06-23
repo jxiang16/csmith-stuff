@@ -1,0 +1,14 @@
+digraph {
+Node0x40d6b60[label="  %1 = load i8* @g_12, align 1"];
+Node0x40d6b60 -> Node0x40d6b60[label="D:0.00ns L:2",color=blue];
+Node0x40d1280[label="  %4 = call i32 @safe_add_func_int32_t_s..."];
+Node0x40d6b60 -> Node0x40d1280[label="D:0.00ns L:2",color=red];
+Node0x40d6c40[label="  %2 = zext i8 %1 to i32"];
+Node0x40d6c40 -> Node0x40d6c40[label="D:0.00ns L:0",color=blue];
+Node0x40d6d20[label="  %3 = load i32* getelementptr inbounds ..."];
+Node0x40d6d20 -> Node0x40d6d20[label="D:0.00ns L:2",color=blue];
+Node0x40d6d20 -> Node0x40d1280[label="D:0.00ns L:2",color=red];
+Node0x40d1280 -> Node0x40d1280[label="D:0.00ns L:1",color=blue];
+Node0x40d1360[label="  store i32 %4, i32* @g_44, align 4"];
+Node0x40d1280 -> Node0x40d1360[label="D:0.00ns L:1",color=red];
+}

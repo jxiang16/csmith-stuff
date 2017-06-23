@@ -1,0 +1,23 @@
+digraph {
+Node0x33fee40[label="  %7 = call signext i8 @safe_lshift_func..."];
+Node0x33fee40 -> Node0x33fee40[label="D:0.00ns L:1",color=blue];
+Node0x33ff000[label="  %9 = load i16* @g_55, align 2"];
+Node0x33fee40 -> Node0x33ff000[label="D:0.00ns L:1",color=red];
+Node0x33ff1f0[label="  %11 = call signext i8 @safe_lshift_fun..."];
+Node0x33fee40 -> Node0x33ff1f0[label="D:0.00ns L:1",color=red];
+Node0x33fef20[label="  %8 = sext i8 %7 to i32"];
+Node0x33fef20 -> Node0x33fef20[label="D:0.00ns L:0",color=blue];
+Node0x33ff000 -> Node0x33ff000[label="D:0.00ns L:2",color=blue];
+Node0x33ff000 -> Node0x33ff1f0[label="D:0.00ns L:2",color=red];
+Node0x33ff110[label="  %10 = sext i16 %9 to i32"];
+Node0x33ff110 -> Node0x33ff110[label="D:0.00ns L:0",color=blue];
+Node0x33ff1f0 -> Node0x33ff1f0[label="D:0.00ns L:1",color=blue];
+Node0x3398010[label="  %12 = sext i8 %11 to i32"];
+Node0x3398010 -> Node0x3398010[label="D:0.00ns L:0",color=blue];
+Node0x33980f0[label="  %13 = icmp sgt i32 %10, %12"];
+Node0x33980f0 -> Node0x33980f0[label="D:3.13ns L:0",color=blue];
+Node0x3398260[label="  %14 = zext i1 %13 to i32"];
+Node0x3398260 -> Node0x3398260[label="D:0.00ns L:0",color=blue];
+Node0x3398340[label="  %15 = icmp eq i32 %8, %14"];
+Node0x3398340 -> Node0x3398340[label="D:2.49ns L:0",color=blue];
+}

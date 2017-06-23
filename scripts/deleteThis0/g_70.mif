@@ -1,0 +1,9 @@
+Depth = 2;
+Width = 32;
+Address_radix = dec;
+Data_radix = hex;
+Content
+Begin
+0: FFFFFFFF;	-- g_70[0] = -1
+1: FFFFFFFF;	-- g_70[1] = -1
+End;

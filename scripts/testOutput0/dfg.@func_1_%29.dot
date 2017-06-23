@@ -1,0 +1,9 @@
+digraph {
+Node0x2bfb3a0[label="  %30 = load i32* @g_6, align 4"];
+Node0x2bfb3a0 -> Node0x2bfb3a0[label="D:0.00ns L:2",color=blue];
+Node0x2bfb480[label="  %31 = call i32 @safe_add_func_uint32_t..."];
+Node0x2bfb3a0 -> Node0x2bfb480[label="D:0.00ns L:2",color=red];
+Node0x2bfb480 -> Node0x2bfb480[label="D:0.00ns L:1",color=blue];
+Node0x2bfb560[label="  %indvar.next = add i16 %indvar, 1"];
+Node0x2bfb560 -> Node0x2bfb560[label="D:2.12ns L:0",color=blue];
+}

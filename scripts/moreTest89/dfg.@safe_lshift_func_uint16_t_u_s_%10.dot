@@ -1,0 +1,6 @@
+digraph {
+Node0x33761d0[label="  %11 = zext i16 %left to i32"];
+Node0x33761d0 -> Node0x33761d0[label="D:0.00ns L:0",color=blue];
+Node0x33762b0[label="  %12 = shl i32 %11, %right"];
+Node0x33762b0 -> Node0x33762b0[label="D:3.33ns L:0",color=blue];
+}

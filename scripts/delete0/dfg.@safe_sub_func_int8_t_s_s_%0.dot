@@ -1,0 +1,4 @@
+digraph {
+Node0x40a9b50[label="  %1 = sub i8 %si1, %si2"];
+Node0x40a9b50 -> Node0x40a9b50[label="D:1.78ns L:0",color=blue];
+}

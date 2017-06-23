@@ -1,0 +1,29 @@
+digraph {
+Node0x4101630[label="  %34 = load i32* @g_77, align 4"];
+Node0x4101630 -> Node0x4101630[label="D:0.00ns L:2",color=blue];
+Node0x41017f0[label="  call void @transparent_crc(i64 %35, i8..."];
+Node0x4101630 -> Node0x41017f0[label="D:0.00ns L:2",color=red];
+Node0x40fed60[label="  call void @transparent_crc(i64 %37, i8..."];
+Node0x4101630 -> Node0x40fed60[label="D:0.00ns L:2",color=red];
+Node0x41021c0[label="  call void @transparent_crc(i64 %39, i8..."];
+Node0x4101630 -> Node0x41021c0[label="D:0.00ns L:2",color=red];
+Node0x4101710[label="  %35 = sext i32 %34 to i64"];
+Node0x4101710 -> Node0x4101710[label="D:0.00ns L:0",color=blue];
+Node0x40feba0[label="  %36 = load i16* @g_113, align 2"];
+Node0x41017f0 -> Node0x40feba0[label="D:0.00ns L:1",color=red];
+Node0x41017f0 -> Node0x40fed60[label="D:0.00ns L:1",color=red];
+Node0x40fee40[label="  %38 = load i32* @g_114, align 4"];
+Node0x41017f0 -> Node0x40fee40[label="D:0.00ns L:1",color=red];
+Node0x41017f0 -> Node0x41021c0[label="D:0.00ns L:1",color=red];
+Node0x40feba0 -> Node0x40feba0[label="D:0.00ns L:2",color=blue];
+Node0x40feba0 -> Node0x40fed60[label="D:0.00ns L:2",color=red];
+Node0x40feba0 -> Node0x41021c0[label="D:0.00ns L:2",color=red];
+Node0x40fec80[label="  %37 = sext i16 %36 to i64"];
+Node0x40fec80 -> Node0x40fec80[label="D:0.00ns L:0",color=blue];
+Node0x40fed60 -> Node0x40fee40[label="D:0.00ns L:1",color=red];
+Node0x40fed60 -> Node0x41021c0[label="D:0.00ns L:1",color=red];
+Node0x40fee40 -> Node0x40fee40[label="D:0.00ns L:2",color=blue];
+Node0x40fee40 -> Node0x41021c0[label="D:0.00ns L:2",color=red];
+Node0x41020e0[label="  %39 = sext i32 %38 to i64"];
+Node0x41020e0 -> Node0x41020e0[label="D:0.00ns L:0",color=blue];
+}

@@ -1,0 +1,8 @@
+Depth = 1;
+Width = 32;
+Address_radix = dec;
+Data_radix = hex;
+Content
+Begin
+0: 2465CD38;	-- g_22[0] = 610651448
+End;

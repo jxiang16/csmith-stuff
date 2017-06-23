@@ -1,0 +1,23 @@
+digraph {
+Node0x31a13b0[label="  %63 = load i8* @g_40, align 1"];
+Node0x31a13b0 -> Node0x31a13b0[label="D:0.00ns L:2",color=blue];
+Node0x31a1490[label="  %64 = call signext i16 @func_13(i8 zer..."];
+Node0x31a13b0 -> Node0x31a1490[label="D:0.00ns L:2",color=red];
+Node0x31a1570[label="  %65 = call signext i16 @safe_mod_func_..."];
+Node0x31a13b0 -> Node0x31a1570[label="D:0.00ns L:2",color=red];
+Node0x31a1490 -> Node0x31a1490[label="D:0.00ns L:1",color=blue];
+Node0x31a1490 -> Node0x31a1570[label="D:0.00ns L:1",color=red];
+Node0x31a1730[label="  %67 = load i8* @g_55, align 1"];
+Node0x31a1490 -> Node0x31a1730[label="D:0.00ns L:1",color=red];
+Node0x31a18f0[label="  store i8 %68, i8* @g_55, align 1"];
+Node0x31a1490 -> Node0x31a18f0[label="D:0.00ns L:1",color=red];
+Node0x31a1570 -> Node0x31a1570[label="D:0.00ns L:1",color=blue];
+Node0x31a1570 -> Node0x31a1730[label="D:0.00ns L:1",color=red];
+Node0x31a1570 -> Node0x31a18f0[label="D:0.00ns L:1",color=red];
+Node0x31a1650[label="  %66 = trunc i16 %65 to i8"];
+Node0x31a1650 -> Node0x31a1650[label="D:0.00ns L:0",color=blue];
+Node0x31a1730 -> Node0x31a1730[label="D:0.00ns L:2",color=blue];
+Node0x31a1730 -> Node0x31a18f0[label="D:0.00ns L:2",color=red];
+Node0x31a1810[label="  %68 = xor i8 %67, %66"];
+Node0x31a1810 -> Node0x31a1810[label="D:0.92ns L:0",color=blue];
+}

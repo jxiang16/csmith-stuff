@@ -1,0 +1,4 @@
+digraph {
+Node0x3179c00[label="  %3 = icmp sgt i32 %right, 31"];
+Node0x3179c00 -> Node0x3179c00[label="D:3.13ns L:0",color=blue];
+}

@@ -1,0 +1,20 @@
+digraph {
+Node0x3c66080[label="  call void @crc32_gentab() #3"];
+Node0x3c65fa0[label="  call void @platform_main_begin() #3"];
+Node0x3c65fa0 -> Node0x3c66080[label="D:0.00ns L:1",color=red];
+Node0x3c661a0[label="  %1 = call zeroext i8 @func_1() #3"];
+Node0x3c65fa0 -> Node0x3c661a0[label="D:0.00ns L:1",color=red];
+Node0x3c66280[label="  %2 = load i8* @g_2, align 1"];
+Node0x3c65fa0 -> Node0x3c66280[label="D:0.00ns L:1",color=red];
+Node0x3c66c90[label="  call void @transparent_crc(i64 %3, i8*..."];
+Node0x3c65fa0 -> Node0x3c66c90[label="D:0.00ns L:1",color=red];
+Node0x3c66080 -> Node0x3c661a0[label="D:0.00ns L:1",color=red];
+Node0x3c66080 -> Node0x3c66280[label="D:0.00ns L:1",color=red];
+Node0x3c66080 -> Node0x3c66c90[label="D:0.00ns L:1",color=red];
+Node0x3c661a0 -> Node0x3c66280[label="D:0.00ns L:1",color=red];
+Node0x3c661a0 -> Node0x3c66c90[label="D:0.00ns L:1",color=red];
+Node0x3c66280 -> Node0x3c66280[label="D:0.00ns L:2",color=blue];
+Node0x3c66280 -> Node0x3c66c90[label="D:0.00ns L:2",color=red];
+Node0x3c66390[label="  %3 = sext i8 %2 to i64"];
+Node0x3c66390 -> Node0x3c66390[label="D:0.00ns L:0",color=blue];
+}

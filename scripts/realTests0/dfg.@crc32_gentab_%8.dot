@@ -1,0 +1,6 @@
+digraph {
+Node0x2ce7d20[label="  %9 = lshr i32 %crc.0, 1"];
+Node0x2ce7d20 -> Node0x2ce7d20[label="D:0.00ns L:0",color=blue];
+Node0x2ce7e00[label="  %10 = xor i32 %9, -306674912"];
+Node0x2ce7e00 -> Node0x2ce7e00[label="D:0.91ns L:0",color=blue];
+}

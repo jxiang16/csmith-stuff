@@ -1,0 +1,8 @@
+Depth = 1;
+Width = 32;
+Address_radix = dec;
+Data_radix = hex;
+Content
+Begin
+0: 00000001;	-- g_9[0] = 1
+End;

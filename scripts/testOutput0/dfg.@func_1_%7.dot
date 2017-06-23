@@ -1,0 +1,11 @@
+digraph {
+Node0x2bf9800[label="  %storemerge = phi i32 [ 24, %6 ], [ %3..."];
+Node0x2bf9800 -> Node0x2bf9800[label="D:0.00ns L:0",color=blue];
+Node0x2bf9800 -> Node0x2bf9800[label="D:0.00ns L:0",color=blue];
+Node0x2bf98e0[label="  %l_30.0 = phi i16 [ 0, %6 ], [ %l_30.1..."];
+Node0x2bf98e0 -> Node0x2bf98e0[label="D:0.00ns L:0",color=blue];
+Node0x2bf98e0 -> Node0x2bf98e0[label="D:0.00ns L:0",color=blue];
+Node0x2bf98e0 -> Node0x2bf98e0[label="D:0.00ns L:0",color=blue];
+Node0x2bf9aa0[label="  %8 = icmp eq i32 %storemerge, -16"];
+Node0x2bf9aa0 -> Node0x2bf9aa0[label="D:2.49ns L:0",color=blue];
+}

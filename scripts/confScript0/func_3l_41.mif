@@ -1,0 +1,14 @@
+Depth = 7;
+Width = 8;
+Address_radix = dec;
+Data_radix = hex;
+Content
+Begin
+0: 00;	-- func_3l_41[0] = 0
+1: F9;	-- func_3l_41[1] = -7
+2: F9;	-- func_3l_41[2] = -7
+3: 00;	-- func_3l_41[3] = 0
+4: F9;	-- func_3l_41[4] = -7
+5: F9;	-- func_3l_41[5] = -7
+6: 00;	-- func_3l_41[6] = 0
+End;

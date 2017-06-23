@@ -1,0 +1,8 @@
+Depth = 1;
+Width = 32;
+Address_radix = dec;
+Data_radix = hex;
+Content
+Begin
+0: 00000005;	-- g_2[0] = 5
+End;

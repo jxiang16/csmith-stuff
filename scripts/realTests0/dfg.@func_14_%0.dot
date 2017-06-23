@@ -1,0 +1,16 @@
+digraph {
+Node0x2de2260[label="  %l_62 = alloca [4 x i32], align 4"];
+Node0x2de2260 -> Node0x2de2260[label="D:0.00ns L:0",color=blue];
+Node0x2de2260 -> Node0x2de2260[label="D:0.00ns L:0",color=blue];
+Node0x2de14b0[label="  %l_64 = alloca [8 x [9 x i8]], align 1"];
+Node0x2de14b0 -> Node0x2de14b0[label="D:0.00ns L:0",color=blue];
+Node0x2de14b0 -> Node0x2de14b0[label="D:0.00ns L:0",color=blue];
+Node0x2de14b0 -> Node0x2de14b0[label="D:0.00ns L:0",color=blue];
+Node0x2de2340[label="  %1 = bitcast [4 x i32]* %l_62 to i8*"];
+Node0x2de2340 -> Node0x2de2340[label="D:0.00ns L:0",color=blue];
+Node0x2de4500[label="  call void @legup_memcpy_1(i8* %2, i8* ..."];
+Node0x2de2450[label="  call void @legup_memcpy_4(i8* %1, i8* ..."];
+Node0x2de2450 -> Node0x2de4500[label="D:0.00ns L:1",color=red];
+Node0x2de4420[label="  %2 = getelementptr inbounds [8 x [9 x ..."];
+Node0x2de4420 -> Node0x2de4420[label="D:0.00ns L:0",color=blue];
+}

@@ -1,0 +1,20 @@
+digraph {
+Node0x40b95c0[label="  %183 = trunc i32 %l_60.2 to i8"];
+Node0x40b95c0 -> Node0x40b95c0[label="D:0.00ns L:0",color=blue];
+Node0x40b96a0[label="  %184 = load i32* @g_2, align 4"];
+Node0x40b96a0 -> Node0x40b96a0[label="D:0.00ns L:2",color=blue];
+Node0x40b9a20[label="  %188 = call signext i8 @safe_sub_func_..."];
+Node0x40b96a0 -> Node0x40b9a20[label="D:0.00ns L:2",color=red];
+Node0x40b9780[label="  %185 = load i32* getelementptr inbound..."];
+Node0x40b9780 -> Node0x40b9780[label="D:0.00ns L:2",color=blue];
+Node0x40b9780 -> Node0x40b9a20[label="D:0.00ns L:2",color=red];
+Node0x40b9860[label="  %186 = icmp ugt i32 %184, %185"];
+Node0x40b9860 -> Node0x40b9860[label="D:3.12ns L:0",color=blue];
+Node0x40b9940[label="  %187 = zext i1 %186 to i8"];
+Node0x40b9940 -> Node0x40b9940[label="D:0.00ns L:0",color=blue];
+Node0x40b9a20 -> Node0x40b9a20[label="D:0.00ns L:1",color=blue];
+Node0x40b9be0[label="  store i32 %189, i32* @g_77, align 4"];
+Node0x40b9a20 -> Node0x40b9be0[label="D:0.00ns L:1",color=red];
+Node0x40b9b00[label="  %189 = sext i8 %188 to i32"];
+Node0x40b9b00 -> Node0x40b9b00[label="D:0.00ns L:0",color=blue];
+}

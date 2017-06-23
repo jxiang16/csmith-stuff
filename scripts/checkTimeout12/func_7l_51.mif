@@ -1,0 +1,15 @@
+Depth = 8;
+Width = 16;
+Address_radix = dec;
+Data_radix = hex;
+Content
+Begin
+0: 6FEF;	-- func_7l_51[0] = 28655
+1: 6FEF;	-- func_7l_51[1] = 28655
+2: 76C1;	-- func_7l_51[2] = 30401
+3: 6FEF;	-- func_7l_51[3] = 28655
+4: 6FEF;	-- func_7l_51[4] = 28655
+5: 76C1;	-- func_7l_51[5] = 30401
+6: 6FEF;	-- func_7l_51[6] = 28655
+7: 6FEF;	-- func_7l_51[7] = 28655
+End;

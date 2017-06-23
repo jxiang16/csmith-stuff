@@ -1,0 +1,18 @@
+digraph {
+Node0x3c679e0[label="  %14 = load volatile i32* @g_74, align ..."];
+Node0x3c679e0 -> Node0x3c679e0[label="D:0.00ns L:2",color=blue];
+Node0x3c67ba0[label="  call void @transparent_crc(i64 %15, i8..."];
+Node0x3c679e0 -> Node0x3c67ba0[label="D:0.00ns L:2",color=red];
+Node0x3c67e40[label="  %18 = call i32 @platform_main_end(i32 ..."];
+Node0x3c679e0 -> Node0x3c67e40[label="D:0.00ns L:2",color=red];
+Node0x3c67ac0[label="  %15 = sext i32 %14 to i64"];
+Node0x3c67ac0 -> Node0x3c67ac0[label="D:0.00ns L:0",color=blue];
+Node0x3c67c80[label="  %16 = load i32* @crc32_context, align ..."];
+Node0x3c67ba0 -> Node0x3c67c80[label="D:0.00ns L:1",color=red];
+Node0x3c67ba0 -> Node0x3c67e40[label="D:0.00ns L:1",color=red];
+Node0x3c67c80 -> Node0x3c67c80[label="D:0.00ns L:2",color=blue];
+Node0x3c67c80 -> Node0x3c67e40[label="D:0.00ns L:2",color=red];
+Node0x3c67d60[label="  %17 = xor i32 %16, -1"];
+Node0x3c67d60 -> Node0x3c67d60[label="D:0.91ns L:0",color=blue];
+Node0x3c67e40 -> Node0x3c67e40[label="D:0.00ns L:1",color=blue];
+}

@@ -1,0 +1,22 @@
+digraph {
+Node0x40bc6c0[label="  %l_110.1 = phi i32 [ %195, %210 ], [ %..."];
+Node0x40bc6c0 -> Node0x40bc6c0[label="D:0.00ns L:0",color=blue];
+Node0x40bc6c0 -> Node0x40bc6c0[label="D:0.00ns L:0",color=blue];
+Node0x40bc7a0[label="  %235 = phi i32 [ 1, %210 ], [ 0, %191 ..."];
+Node0x40bc7a0 -> Node0x40bc7a0[label="D:0.00ns L:0",color=blue];
+Node0x40bc880[label="  %236 = load i32* getelementptr inbound..."];
+Node0x40bc880 -> Node0x40bc880[label="D:0.00ns L:2",color=blue];
+Node0x40bcce0[label="  %241 = call signext i16 @safe_rshift_f..."];
+Node0x40bc880 -> Node0x40bcce0[label="D:0.00ns L:2",color=red];
+Node0x40bc960[label="  %237 = icmp ugt i32 %235, %236"];
+Node0x40bc960 -> Node0x40bc960[label="D:3.12ns L:0",color=blue];
+Node0x40bca40[label="  %238 = zext i1 %237 to i32"];
+Node0x40bca40 -> Node0x40bca40[label="D:0.00ns L:0",color=blue];
+Node0x40bcb20[label="  %239 = icmp sle i32 %238, %21"];
+Node0x40bcb20 -> Node0x40bcb20[label="D:2.86ns L:0",color=blue];
+Node0x40bcc00[label="  %240 = zext i1 %239 to i16"];
+Node0x40bcc00 -> Node0x40bcc00[label="D:0.00ns L:0",color=blue];
+Node0x40bcce0 -> Node0x40bcce0[label="D:0.00ns L:1",color=blue];
+Node0x40bcdc0[label="  %242 = icmp eq i16 %241, 0"];
+Node0x40bcdc0 -> Node0x40bcdc0[label="D:2.01ns L:0",color=blue];
+}

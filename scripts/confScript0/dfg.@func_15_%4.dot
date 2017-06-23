@@ -1,0 +1,11 @@
+digraph {
+Node0x3160d40[label="  %5 = load i16* @g_8, align 2"];
+Node0x3160d40 -> Node0x3160d40[label="D:0.00ns L:2",color=blue];
+Node0x3160f00[label="  %7 = call i32 @safe_add_func_int32_t_s..."];
+Node0x3160d40 -> Node0x3160f00[label="D:0.00ns L:2",color=red];
+Node0x3160e20[label="  %6 = zext i16 %5 to i32"];
+Node0x3160e20 -> Node0x3160e20[label="D:0.00ns L:0",color=blue];
+Node0x3160f00 -> Node0x3160f00[label="D:0.00ns L:1",color=blue];
+Node0x3160fe0[label="  %8 = trunc i32 %7 to i16"];
+Node0x3160fe0 -> Node0x3160fe0[label="D:0.00ns L:0",color=blue];
+}

@@ -1,0 +1,7 @@
+digraph {
+Node0x4031f40[label="LEGUP_F_platform_main_begin_BB__0"];
+Node0x403ced0[label="LEGUP"];
+Node0x403ced0 -> Node0x4031f40[label="<null>"];
+Node0x403ced0 -> Node0x403ced0[label="~<null>"];
+Node0x4031f40 -> Node0x403ced0;
+}

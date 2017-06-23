@@ -1,0 +1,20 @@
+digraph {
+Node0x340f0b0[label="  %12 = phi i32 [ 0, %3 ], [ 1, %10 ]"];
+Node0x340f0b0 -> Node0x340f0b0[label="D:0.00ns L:0",color=blue];
+Node0x340f190[label="  %13 = or i32 %7, %12"];
+Node0x340f190 -> Node0x340f190[label="D:0.87ns L:0",color=blue];
+Node0x340f270[label="  %14 = trunc i32 %13 to i16"];
+Node0x340f270 -> Node0x340f270[label="D:0.00ns L:0",color=blue];
+Node0x340f350[label="  %15 = call zeroext i16 @safe_mul_func_..."];
+Node0x340f350 -> Node0x340f350[label="D:0.00ns L:1",color=blue];
+Node0x340f510[label="  %17 = call i32 @safe_mod_func_uint32_t..."];
+Node0x340f350 -> Node0x340f510[label="D:0.00ns L:1",color=red];
+Node0x340f5f0[label="  %18 = call zeroext i16 @safe_sub_func_..."];
+Node0x340f350 -> Node0x340f5f0[label="D:0.00ns L:1",color=red];
+Node0x340f430[label="  %16 = zext i16 %15 to i32"];
+Node0x340f430 -> Node0x340f430[label="D:0.00ns L:0",color=blue];
+Node0x340f510 -> Node0x340f5f0[label="D:0.00ns L:1",color=red];
+Node0x340f5f0 -> Node0x340f5f0[label="D:0.00ns L:1",color=blue];
+Node0x340f6d0[label="  %19 = icmp eq i16 %18, 0"];
+Node0x340f6d0 -> Node0x340f6d0[label="D:2.01ns L:0",color=blue];
+}

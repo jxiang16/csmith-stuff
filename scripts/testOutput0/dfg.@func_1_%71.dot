@@ -1,0 +1,17 @@
+digraph {
+Node0x2bee550[label="  %72 = getelementptr inbounds [3 x i16]..."];
+Node0x2bee550 -> Node0x2bee550[label="D:0.00ns L:0",color=blue];
+Node0x2bee630[label="  %73 = load i16* %72, align 2"];
+Node0x2bee630 -> Node0x2bee630[label="D:0.00ns L:2",color=blue];
+Node0x2bee7f0[label="  %75 = call i32 @func_17(i8 signext %38..."];
+Node0x2bee630 -> Node0x2bee7f0[label="D:0.00ns L:2",color=red];
+Node0x2bee710[label="  %74 = sext i16 %73 to i32"];
+Node0x2bee710 -> Node0x2bee710[label="D:0.00ns L:0",color=blue];
+Node0x2bee7f0 -> Node0x2bee7f0[label="D:0.00ns L:1",color=blue];
+Node0x2bee8d0[label="  %76 = zext i16 %l_30.0 to i32"];
+Node0x2bee8d0 -> Node0x2bee8d0[label="D:0.00ns L:0",color=blue];
+Node0x2bee9b0[label="  %77 = or i32 %75, %76"];
+Node0x2bee9b0 -> Node0x2bee9b0[label="D:0.87ns L:0",color=blue];
+Node0x2beea90[label="  %78 = or i32 %77, 395942169"];
+Node0x2beea90 -> Node0x2beea90[label="D:0.00ns L:0",color=blue];
+}

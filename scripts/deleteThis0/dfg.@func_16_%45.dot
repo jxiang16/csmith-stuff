@@ -1,0 +1,12 @@
+digraph {
+Node0x3c2df90[label="  %46 = load i8* @g_2, align 1"];
+Node0x3c2df90 -> Node0x3c2df90[label="D:0.00ns L:2",color=blue];
+Node0x3c2df90 -> Node0x3c2df90[label="D:0.00ns L:2",color=blue];
+Node0x3c2df90 -> Node0x3c2df90[label="D:0.00ns L:2",color=blue];
+Node0x3c2e070[label="  %47 = getelementptr inbounds [10 x i32..."];
+Node0x3c2e070 -> Node0x3c2e070[label="D:0.00ns L:0",color=blue];
+Node0x3c2e150[label="  %48 = load i32* %47, align 4"];
+Node0x3c2e150 -> Node0x3c2e150[label="D:0.00ns L:2",color=blue];
+Node0x3c2e230[label="  %49 = icmp eq i8 %46, 0"];
+Node0x3c2e230 -> Node0x3c2e230[label="D:1.79ns L:0",color=blue];
+}

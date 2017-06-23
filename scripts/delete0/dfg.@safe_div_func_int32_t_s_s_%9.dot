@@ -1,0 +1,4 @@
+digraph {
+Node0x40a1370[label="  %10 = phi i32 [ %si1, %6 ], [ %8, %7 ]"];
+Node0x40a1370 -> Node0x40a1370[label="D:0.00ns L:0",color=blue];
+}

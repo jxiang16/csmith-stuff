@@ -1,0 +1,57 @@
+# vsim -c -do "run 7000000000000000ns; exit;" work.main_tb 
+# Start time: 15:04:30 on Jun 13,2017
+# Loading work.main_tb
+# Loading work.top
+# Loading work.memory_controller
+# Loading work.ram_dual_port
+# Loading work.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading work.rom_dual_port
+# Loading work.main
+# Loading work.platform_main_begin
+# Loading work.crc32_gentab
+# Loading work.func_1
+# Loading work.safe_rshift_func_uint16_t_u_s
+# Loading work.func_19
+# Loading work.func_24
+# Loading work.func_39
+# Loading work.safe_add_func_int32_t_s_s
+# Loading work.safe_rshift_func_int16_t_s_s
+# Loading work.safe_mod_func_int8_t_s_s
+# Loading work.lpm_divide
+# Loading work.LPM_HINT_EVALUATION
+# Loading work.safe_sub_func_int32_t_s_s
+# Loading work.safe_mul_func_int8_t_s_s
+# Loading work.safe_mul_func_uint16_t_u_u
+# Loading work.safe_sub_func_uint16_t_u_u
+# Loading work.safe_mul_func_int16_t_s_s
+# Loading work.safe_lshift_func_uint16_t_u_s
+# Loading work.safe_add_func_uint16_t_u_u
+# Loading work.safe_rshift_func_uint16_t_u_u
+# Loading work.safe_lshift_func_uint16_t_u_u
+# Loading work.safe_lshift_func_int8_t_s_s
+# Loading work.safe_sub_func_int16_t_s_s
+# Loading work.safe_sub_func_uint8_t_u_u
+# Loading work.safe_sub_func_int8_t_s_s
+# Loading work.safe_rshift_func_uint8_t_u_s
+# Loading work.safe_add_func_uint8_t_u_u
+# Loading work.safe_add_func_uint32_t_u_u
+# Loading work.safe_lshift_func_uint8_t_u_s
+# Loading work.safe_div_func_int32_t_s_s
+# Loading work.transparent_crc
+# Loading work.crc32_8bytes
+# Loading work.crc32_byte
+# Loading work.platform_main_end
+# ** Warning: (vsim-3017) delete0.v(136): [TFMPC] - Too few port connections. Expected 22, found 20.
+#         Region: /main_tb/top_inst/main_inst
+# ** Warning: (vsim-3722) delete0.v(136): [TFMPC] - Missing connection for port 'arg_argc'.
+# ** Warning: (vsim-3722) delete0.v(136): [TFMPC] - Missing connection for port 'arg_argv'.
+# ** Warning: Design size of 14015 statements exceeds ModelSim Altera Starter recommended capacity.
+# Expect performance to be adversely affected.
+# run 7000000000000000ns
+# checksum = 1138460291
+# At t=           366490000 clk=1 finish=1 return_val=1138460291
+# Cycles:                18322
+# ** Note: $finish    : delete0.v(25983)
+#    Time: 366490 ns  Iteration: 2  Instance: /main_tb
+# End time: 15:05:33 on Jun 13,2017, Elapsed time: 0:01:03
+# Errors: 0, Warnings: 4

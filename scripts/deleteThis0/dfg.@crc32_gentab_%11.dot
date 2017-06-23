@@ -1,0 +1,4 @@
+digraph {
+Node0x3b91a50[label="  %12 = lshr i32 %crc.0, 1"];
+Node0x3b91a50 -> Node0x3b91a50[label="D:0.00ns L:0",color=blue];
+}

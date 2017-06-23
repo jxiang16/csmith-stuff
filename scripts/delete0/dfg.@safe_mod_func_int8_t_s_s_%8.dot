@@ -1,0 +1,8 @@
+digraph {
+Node0x4047dc0[label="  %9 = sext i8 %si1 to i32"];
+Node0x4047dc0 -> Node0x4047dc0[label="D:0.00ns L:0",color=blue];
+Node0x4047ea0[label="  %10 = sext i8 %si2 to i32"];
+Node0x4047ea0 -> Node0x4047ea0[label="D:0.00ns L:0",color=blue];
+Node0x4047f80[label="  %11 = srem i32 %9, %10"];
+Node0x4047f80 -> Node0x4047f80[label="D:20.00ns L:32",color=blue];
+}

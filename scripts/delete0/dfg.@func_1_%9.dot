@@ -1,0 +1,6 @@
+digraph {
+Node0x40d2c80[label="  %10 = call zeroext i16 @safe_rshift_fu..."];
+Node0x40d2c80 -> Node0x40d2c80[label="D:0.00ns L:1",color=blue];
+Node0x40d2d60[label="  %11 = icmp eq i16 %10, 0"];
+Node0x40d2d60 -> Node0x40d2d60[label="D:2.01ns L:0",color=blue];
+}

@@ -1,0 +1,6 @@
+digraph {
+Node0x31a3540[label="  %86 = phi i1 [ true, %79 ], [ %84, %82..."];
+Node0x31a3540 -> Node0x31a3540[label="D:0.00ns L:0",color=blue];
+Node0x31a3620[label="  %87 = icmp eq i32 %indvar1, 4"];
+Node0x31a3620 -> Node0x31a3620[label="D:2.49ns L:0",color=blue];
+}

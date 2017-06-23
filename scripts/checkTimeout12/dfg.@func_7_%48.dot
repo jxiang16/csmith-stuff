@@ -1,0 +1,8 @@
+digraph {
+Node0x2bd9a50[label="  %49 = getelementptr inbounds [8 x i16]..."];
+Node0x2bd9a50 -> Node0x2bd9a50[label="D:0.00ns L:0",color=blue];
+Node0x2bd9b30[label="  %50 = load i16* %49, align 2"];
+Node0x2bd9b30 -> Node0x2bd9b30[label="D:0.00ns L:2",color=blue];
+Node0x2bd9c10[label="  %51 = icmp ne i16 %50, 0"];
+Node0x2bd9c10 -> Node0x2bd9c10[label="D:2.01ns L:0",color=blue];
+}

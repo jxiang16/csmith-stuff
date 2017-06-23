@@ -1,0 +1,10 @@
+digraph {
+Node0x3158640[label="  %indvar = phi i32 [ %indvar.next, %17 ..."];
+Node0x3158640 -> Node0x3158640[label="D:0.00ns L:0",color=blue];
+Node0x3158640 -> Node0x3158640[label="D:0.00ns L:0",color=blue];
+Node0x3158720[label="  %.0 = phi i32 [ %phitmp, %17 ], [ 0, %..."];
+Node0x3158720 -> Node0x3158720[label="D:0.00ns L:0",color=blue];
+Node0x3158720 -> Node0x3158720[label="D:0.00ns L:0",color=blue];
+Node0x3158800[label="  %exitcond = icmp eq i32 %indvar, 10"];
+Node0x3158800 -> Node0x3158800[label="D:2.49ns L:0",color=blue];
+}

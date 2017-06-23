@@ -1,0 +1,17 @@
+digraph {
+Node0x409c6a0[label="  %116 = phi i16 [ 0, %92 ], [ 1, %102 ]"];
+Node0x409c6a0 -> Node0x409c6a0[label="D:0.00ns L:0",color=blue];
+Node0x409c780[label="  %117 = call zeroext i16 @safe_lshift_f..."];
+Node0x409c780 -> Node0x409c780[label="D:0.00ns L:1",color=blue];
+Node0x409c940[label="  %119 = load i32* @g_44, align 4"];
+Node0x409c780 -> Node0x409c940[label="D:0.00ns L:1",color=red];
+Node0x409c860[label="  %118 = zext i16 %117 to i32"];
+Node0x409c860 -> Node0x409c860[label="D:0.00ns L:0",color=blue];
+Node0x409c940 -> Node0x409c940[label="D:0.00ns L:2",color=blue];
+Node0x409ca20[label="  %120 = xor i32 %118, %119"];
+Node0x409ca20 -> Node0x409ca20[label="D:0.91ns L:0",color=blue];
+Node0x409cb00[label="  %121 = and i32 %120, 76"];
+Node0x409cb00 -> Node0x409cb00[label="D:0.00ns L:0",color=blue];
+Node0x409cbe0[label="  %122 = icmp eq i32 %121, 0"];
+Node0x409cbe0 -> Node0x409cbe0[label="D:2.49ns L:0",color=blue];
+}

@@ -1,0 +1,14 @@
+digraph {
+Node0x3c2d080[label="  %37 = zext i1 %35 to i32"];
+Node0x3c2d080 -> Node0x3c2d080[label="D:0.00ns L:0",color=blue];
+Node0x3c2d160[label="  %38 = xor i32 %37, 1"];
+Node0x3c2d160 -> Node0x3c2d160[label="D:0.91ns L:0",color=blue];
+Node0x3c2d240[label="  %39 = zext i1 %35 to i32"];
+Node0x3c2d240 -> Node0x3c2d240[label="D:0.00ns L:0",color=blue];
+Node0x3c2d320[label="  %40 = call i32 @safe_sub_func_int32_t_..."];
+Node0x3c2d320 -> Node0x3c2d320[label="D:0.00ns L:1",color=blue];
+Node0x3c2d400[label="  %sext = shl i32 %40, 16"];
+Node0x3c2d400 -> Node0x3c2d400[label="D:0.00ns L:0",color=blue];
+Node0x3c2d4e0[label="  %phitmp = ashr exact i32 %sext, 16"];
+Node0x3c2d4e0 -> Node0x3c2d4e0[label="D:0.00ns L:0",color=blue];
+}

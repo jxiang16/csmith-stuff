@@ -1,0 +1,16 @@
+Depth = 9;
+Width = 16;
+Address_radix = dec;
+Data_radix = hex;
+Content
+Begin
+0: 0007;	-- func_1l_9[0] = 7
+1: C146;	-- func_1l_9[1] = -16058
+2: C146;	-- func_1l_9[2] = -16058
+3: 0007;	-- func_1l_9[3] = 7
+4: C146;	-- func_1l_9[4] = -16058
+5: C146;	-- func_1l_9[5] = -16058
+6: 0007;	-- func_1l_9[6] = 7
+7: C146;	-- func_1l_9[7] = -16058
+8: C146;	-- func_1l_9[8] = -16058
+End;

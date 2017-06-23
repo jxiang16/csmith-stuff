@@ -1,0 +1,10 @@
+digraph {
+Node0x3158c60[label="  %18 = shl nsw i32 %.0, 16"];
+Node0x3158c60 -> Node0x3158c60[label="D:0.00ns L:0",color=blue];
+Node0x3158d40[label="  %sext = add i32 %18, 65536"];
+Node0x3158d40 -> Node0x3158d40[label="D:2.50ns L:0",color=blue];
+Node0x3158e20[label="  %phitmp = ashr exact i32 %sext, 16"];
+Node0x3158e20 -> Node0x3158e20[label="D:0.00ns L:0",color=blue];
+Node0x3158f00[label="  %indvar.next = add i32 %indvar, 1"];
+Node0x3158f00 -> Node0x3158f00[label="D:2.50ns L:0",color=blue];
+}

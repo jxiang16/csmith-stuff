@@ -1,0 +1,23 @@
+digraph {
+Node0x2b9f330[label="LEGUP_F_safe_lshift_func_int8_t_s_s_BB__..."];
+Node0x2b7e600[label="LEGUP_0"];
+Node0x2b7e600 -> Node0x2b9f330[label="start"];
+Node0x2b7e600 -> Node0x2b7e600[label="~start"];
+Node0x2b68e40[label="LEGUP_F_safe_lshift_func_int8_t_s_s_BB__..."];
+Node0x2b9f330 -> Node0x2b68e40[label="%1"];
+Node0x2b68130[label="LEGUP_F_safe_lshift_func_int8_t_s_s_BB__..."];
+Node0x2b9f330 -> Node0x2b68130[label="~%1"];
+Node0x2b68130 -> Node0x2b68e40[label="%3"];
+Node0x2b682b0[label="LEGUP_F_safe_lshift_func_int8_t_s_s_BB__..."];
+Node0x2b68130 -> Node0x2b682b0[label="~%3"];
+Node0x2b682b0 -> Node0x2b68e40[label="%5"];
+Node0x2b68430[label="LEGUP_F_safe_lshift_func_int8_t_s_s_BB__..."];
+Node0x2b682b0 -> Node0x2b68430[label="~%5"];
+Node0x2b68430 -> Node0x2b68e40[label="%9"];
+Node0x2b68f90[label="LEGUP_F_safe_lshift_func_int8_t_s_s_BB__..."];
+Node0x2b68430 -> Node0x2b68f90[label="~%9"];
+Node0x2b69110[label="LEGUP_F_safe_lshift_func_int8_t_s_s_BB__..."];
+Node0x2b68e40 -> Node0x2b69110;
+Node0x2b68f90 -> Node0x2b69110;
+Node0x2b69110 -> Node0x2b7e600;
+}

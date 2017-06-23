@@ -1,0 +1,11 @@
+Depth = 4;
+Width = 32;
+Address_radix = dec;
+Data_radix = hex;
+Content
+Begin
+0: B1F8487B;	-- g_49[0] = -1309128581
+1: B1F8487B;	-- g_49[1] = -1309128581
+2: B1F8487B;	-- g_49[2] = -1309128581
+3: B1F8487B;	-- g_49[3] = -1309128581
+End;

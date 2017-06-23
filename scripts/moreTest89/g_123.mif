@@ -1,0 +1,8 @@
+Depth = 1;
+Width = 16;
+Address_radix = dec;
+Data_radix = hex;
+Content
+Begin
+0: 7B43;	-- g_123[0] = 31555
+End;

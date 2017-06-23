@@ -1,0 +1,10 @@
+digraph {
+Node0x394d000[label="  %11 = load i32* getelementptr inbounds..."];
+Node0x394d000 -> Node0x394d000[label="D:0.00ns L:2",color=blue];
+Node0x394d0e0[label="  %12 = load i32* @g_4, align 4"];
+Node0x394d0e0 -> Node0x394d0e0[label="D:0.00ns L:2",color=blue];
+Node0x394d1c0[label="  %13 = load i32* @g_3, align 4"];
+Node0x394d1c0 -> Node0x394d1c0[label="D:0.00ns L:2",color=blue];
+Node0x394d2a0[label="  %14 = getelementptr inbounds [3 x [2 x..."];
+Node0x394d2a0 -> Node0x394d2a0[label="D:20.00ns L:0",color=blue];
+}

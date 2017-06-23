@@ -1,0 +1,154 @@
+\documentclass[landscape]{article}
+\usepackage{gantt}
+\pagestyle{empty}
+\begin{document}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{5}{4}
+\begin{ganttitle}
+\numtitle{0}{1}{3}{1}
+\end{ganttitle}
+\ganttbar{  \%l\_2 = alloca [3 x [2 x [5 x i32]]], align 4}{1}{1}
+\ganttcon{2}{1}{1}{2}
+\ganttbar{  \%1 = bitcast [3 x [2 x [5 x i32]]]* \%l\_2 to i8*}{1}{1}
+\ganttcon{2}{2}{2}{4}
+\ganttbar{  br label \%2}{1}{1}
+\ganttbar{  call void @legup\_memcpy\_4(i8* \%1, i8* bitcast ([3 x [2 x [5 x i32]]]* @func...}{2}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{5}{3}
+\begin{ganttitle}
+\numtitle{0}{1}{2}{1}
+\end{ganttitle}
+\ganttbar{  \%storemerge = phi i32 [ 0, \%0 ], [ \%25, \%23 ]}{1}{1}
+\ganttcon{2}{1}{1}{3}
+\ganttcon{2}{1}{1}{2}
+\ganttbar{  store i32 \%storemerge, i32* @g\_3, align 4}{1}{1}
+\ganttbar{  \%3 = icmp slt i32 \%storemerge, 3}{1}{1}
+\ganttcon{2}{3}{1}{4}
+\ganttbar{  br i1 \%3, label \%4, label \%26}{1}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{2}{2}
+\begin{ganttitle}
+\numtitle{0}{1}{1}{1}
+\end{ganttitle}
+\ganttbar{  br label \%5}{1}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{5}{3}
+\begin{ganttitle}
+\numtitle{0}{1}{2}{1}
+\end{ganttitle}
+\ganttbar{  \%storemerge1 = phi i32 [ 0, \%4 ], [ \%21, \%19 ]}{1}{1}
+\ganttcon{2}{1}{1}{3}
+\ganttcon{2}{1}{1}{2}
+\ganttbar{  store i32 \%storemerge1, i32* @g\_4, align 4}{1}{1}
+\ganttbar{  \%6 = icmp slt i32 \%storemerge1, 2}{1}{1}
+\ganttcon{2}{3}{1}{4}
+\ganttbar{  br i1 \%6, label \%7, label \%22}{1}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{2}{2}
+\begin{ganttitle}
+\numtitle{0}{1}{1}{1}
+\end{ganttitle}
+\ganttbar{  br label \%8}{1}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{5}{3}
+\begin{ganttitle}
+\numtitle{0}{1}{2}{1}
+\end{ganttitle}
+\ganttbar{  \%storemerge2 = phi i32 [ 0, \%7 ], [ \%17, \%15 ]}{1}{1}
+\ganttcon{2}{1}{1}{3}
+\ganttcon{2}{1}{1}{2}
+\ganttbar{  store i32 \%storemerge2, i32* getelementptr inbounds ([5 x [3 x [6 x i32]]]* @...}{1}{1}
+\ganttbar{  \%9 = icmp slt i32 \%storemerge2, 5}{1}{1}
+\ganttcon{2}{3}{1}{4}
+\ganttbar{  br i1 \%9, label \%10, label \%18}{1}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{7}{6}
+\begin{ganttitle}
+\numtitle{0}{1}{5}{1}
+\end{ganttitle}
+\ganttbar{  \%11 = load i32* getelementptr inbounds ([5 x [3 x [6 x i32]]]* @g\_5, i32 0, ...}{1}{2}
+\ganttcon{3}{1}{4}{5}
+\ganttbar{  \%12 = load i32* @g\_4, align 4}{1}{2}
+\ganttcon{3}{2}{4}{5}
+\ganttbar{  br label \%15}{1}{1}
+\ganttbar{  \%13 = load i32* @g\_3, align 4}{2}{2}
+\ganttcon{4}{4}{4}{5}
+\ganttbar{  \%14 = getelementptr inbounds [3 x [2 x [5 x i32]]]* \%l\_2, i32 0, i32 \%13, ...}{4}{1}
+\ganttcon{5}{5}{4}{6}
+\ganttbar{  store i32 581676169, i32* \%14, align 4}{4}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{4}{4}
+\begin{ganttitle}
+\numtitle{0}{1}{3}{1}
+\end{ganttitle}
+\ganttbar{  \%16 = load i32* getelementptr inbounds ([5 x [3 x [6 x i32]]]* @g\_5, i32 0, ...}{1}{2}
+\ganttcon{3}{1}{3}{3}
+\ganttbar{  br label \%8}{1}{1}
+\ganttbar{  \%17 = add nsw i32 \%16, 1}{3}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{2}{2}
+\begin{ganttitle}
+\numtitle{0}{1}{1}{1}
+\end{ganttitle}
+\ganttbar{  br label \%19}{1}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{4}{4}
+\begin{ganttitle}
+\numtitle{0}{1}{3}{1}
+\end{ganttitle}
+\ganttbar{  \%20 = load i32* @g\_4, align 4}{1}{2}
+\ganttcon{3}{1}{3}{3}
+\ganttbar{  br label \%5}{1}{1}
+\ganttbar{  \%21 = add nsw i32 \%20, 1}{3}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{2}{2}
+\begin{ganttitle}
+\numtitle{0}{1}{1}{1}
+\end{ganttitle}
+\ganttbar{  br label \%23}{1}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{4}{4}
+\begin{ganttitle}
+\numtitle{0}{1}{3}{1}
+\end{ganttitle}
+\ganttbar{  \%24 = load i32* @g\_3, align 4}{1}{2}
+\ganttcon{3}{1}{3}{3}
+\ganttbar{  br label \%2}{1}{1}
+\ganttbar{  \%25 = add nsw i32 \%24, 1}{3}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{4}{4}
+\begin{ganttitle}
+\numtitle{0}{1}{3}{1}
+\end{ganttitle}
+\ganttbar{  \%27 = getelementptr inbounds [3 x [2 x [5 x i32]]]* \%l\_2, i32 0, i32 2, i32...}{1}{1}
+\ganttcon{2}{1}{1}{2}
+\ganttbar{  \%28 = load i32* \%27, align 4}{1}{2}
+\ganttcon{3}{2}{3}{3}
+\ganttbar{  ret i32 \%28}{3}{1}
+\end{gantt}
+\end{figure}
+\end{document}

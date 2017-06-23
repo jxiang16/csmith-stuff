@@ -1,0 +1,35 @@
+digraph {
+Node0x31b5570[label="  call void @crc32_gentab() #3"];
+Node0x31b5080[label="  call void @platform_main_begin() #3"];
+Node0x31b5080 -> Node0x31b5570[label="D:0.00ns L:1",color=red];
+Node0x31b5650[label="  %1 = call i32 @func_1() #3"];
+Node0x31b5080 -> Node0x31b5650[label="D:0.00ns L:1",color=red];
+Node0x31b5730[label="  %2 = load volatile i32* @g_2, align 4"];
+Node0x31b5080 -> Node0x31b5730[label="D:0.00ns L:1",color=red];
+Node0x31b58f0[label="  call void @transparent_crc(i64 %3, i8*..."];
+Node0x31b5080 -> Node0x31b58f0[label="D:0.00ns L:1",color=red];
+Node0x31b59d0[label="  %4 = load i32* @g_6, align 4"];
+Node0x31b5080 -> Node0x31b59d0[label="D:0.00ns L:1",color=red];
+Node0x31b5b90[label="  call void @transparent_crc(i64 %5, i8*..."];
+Node0x31b5080 -> Node0x31b5b90[label="D:0.00ns L:1",color=red];
+Node0x31b5570 -> Node0x31b5650[label="D:0.00ns L:1",color=red];
+Node0x31b5570 -> Node0x31b5730[label="D:0.00ns L:1",color=red];
+Node0x31b5570 -> Node0x31b58f0[label="D:0.00ns L:1",color=red];
+Node0x31b5570 -> Node0x31b59d0[label="D:0.00ns L:1",color=red];
+Node0x31b5570 -> Node0x31b5b90[label="D:0.00ns L:1",color=red];
+Node0x31b5650 -> Node0x31b5730[label="D:0.00ns L:1",color=red];
+Node0x31b5650 -> Node0x31b58f0[label="D:0.00ns L:1",color=red];
+Node0x31b5650 -> Node0x31b59d0[label="D:0.00ns L:1",color=red];
+Node0x31b5650 -> Node0x31b5b90[label="D:0.00ns L:1",color=red];
+Node0x31b5730 -> Node0x31b5730[label="D:0.00ns L:2",color=blue];
+Node0x31b5730 -> Node0x31b58f0[label="D:0.00ns L:2",color=red];
+Node0x31b5730 -> Node0x31b5b90[label="D:0.00ns L:2",color=red];
+Node0x31b5810[label="  %3 = zext i32 %2 to i64"];
+Node0x31b5810 -> Node0x31b5810[label="D:0.00ns L:0",color=blue];
+Node0x31b58f0 -> Node0x31b59d0[label="D:0.00ns L:1",color=red];
+Node0x31b58f0 -> Node0x31b5b90[label="D:0.00ns L:1",color=red];
+Node0x31b59d0 -> Node0x31b59d0[label="D:0.00ns L:2",color=blue];
+Node0x31b59d0 -> Node0x31b5b90[label="D:0.00ns L:2",color=red];
+Node0x31b5ab0[label="  %5 = zext i32 %4 to i64"];
+Node0x31b5ab0 -> Node0x31b5ab0[label="D:0.00ns L:0",color=blue];
+}

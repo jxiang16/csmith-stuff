@@ -1,0 +1,10 @@
+Depth = 3;
+Width = 32;
+Address_radix = dec;
+Data_radix = hex;
+Content
+Begin
+0: FFFFFFF8;	-- g_25[0] = -8
+1: FFFFFFF8;	-- g_25[1] = -8
+2: FFFFFFF8;	-- g_25[2] = -8
+End;

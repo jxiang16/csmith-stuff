@@ -1,0 +1,10 @@
+Depth = 3;
+Width = 32;
+Address_radix = dec;
+Data_radix = hex;
+Content
+Begin
+0: DBE4B24D;	-- g_61[0] = -605769139
+1: DBE4B24D;	-- g_61[1] = -605769139
+2: DBE4B24D;	-- g_61[2] = -605769139
+End;

@@ -1,0 +1,10 @@
+digraph {
+Node0x31d2720[label="  %scevgep = getelementptr [4 x i32]* @g..."];
+Node0x31d2720 -> Node0x31d2720[label="D:20.00ns L:0",color=blue];
+Node0x31d2800[label="  %29 = load volatile i32* %scevgep, ali..."];
+Node0x31d2800 -> Node0x31d2800[label="D:0.00ns L:2",color=blue];
+Node0x31d29c0[label="  call void @transparent_crc(i64 %30, i8..."];
+Node0x31d2800 -> Node0x31d29c0[label="D:0.00ns L:2",color=red];
+Node0x31d28e0[label="  %30 = zext i32 %29 to i64"];
+Node0x31d28e0 -> Node0x31d28e0[label="D:0.00ns L:0",color=blue];
+}

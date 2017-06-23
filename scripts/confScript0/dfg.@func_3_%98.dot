@@ -1,0 +1,26 @@
+digraph {
+Node0x31a40f0[label="  %99 = call i32 @safe_div_func_uint32_t..."];
+Node0x31a40f0 -> Node0x31a40f0[label="D:0.00ns L:1",color=blue];
+Node0x31a42b0[label="  %101 = call zeroext i8 @safe_lshift_fu..."];
+Node0x31a40f0 -> Node0x31a42b0[label="D:0.00ns L:1",color=red];
+Node0x31a4630[label="  %105 = load i16* @g_8, align 2"];
+Node0x31a40f0 -> Node0x31a4630[label="D:0.00ns L:1",color=red];
+Node0x31a47f0[label="  %107 = call zeroext i8 @safe_mul_func_..."];
+Node0x31a40f0 -> Node0x31a47f0[label="D:0.00ns L:1",color=red];
+Node0x31a41d0[label="  %100 = trunc i32 %99 to i8"];
+Node0x31a41d0 -> Node0x31a41d0[label="D:0.00ns L:0",color=blue];
+Node0x31a42b0 -> Node0x31a42b0[label="D:0.00ns L:1",color=blue];
+Node0x31a42b0 -> Node0x31a4630[label="D:0.00ns L:1",color=red];
+Node0x31a42b0 -> Node0x31a47f0[label="D:0.00ns L:1",color=red];
+Node0x31a4390[label="  %102 = zext i8 %101 to i32"];
+Node0x31a4390 -> Node0x31a4390[label="D:0.00ns L:0",color=blue];
+Node0x31a4470[label="  %103 = and i32 %.0, %102"];
+Node0x31a4470 -> Node0x31a4470[label="D:0.87ns L:0",color=blue];
+Node0x31a4550[label="  %104 = trunc i32 %103 to i8"];
+Node0x31a4550 -> Node0x31a4550[label="D:0.00ns L:0",color=blue];
+Node0x31a4630 -> Node0x31a4630[label="D:0.00ns L:2",color=blue];
+Node0x31a4630 -> Node0x31a47f0[label="D:0.00ns L:2",color=red];
+Node0x31a4710[label="  %106 = trunc i16 %105 to i8"];
+Node0x31a4710 -> Node0x31a4710[label="D:0.00ns L:0",color=blue];
+Node0x31a47f0 -> Node0x31a47f0[label="D:0.00ns L:1",color=blue];
+}

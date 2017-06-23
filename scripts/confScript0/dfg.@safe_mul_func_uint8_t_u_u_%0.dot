@@ -1,0 +1,4 @@
+digraph {
+Node0x312d4c0[label="  %1 = mul i8 %ui1, %ui2"];
+Node0x312d4c0 -> Node0x312d4c0[label="D:2.43ns L:1",color=blue];
+}

@@ -1,0 +1,8 @@
+digraph {
+Node0x2b71060[label="  %7 = sext i16 %left to i32"];
+Node0x2b71060 -> Node0x2b71060[label="D:0.00ns L:0",color=blue];
+Node0x2b71140[label="  %8 = lshr i32 32767, %right"];
+Node0x2b71140 -> Node0x2b71140[label="D:3.35ns L:0",color=blue];
+Node0x2b71220[label="  %9 = icmp sgt i32 %7, %8"];
+Node0x2b71220 -> Node0x2b71220[label="D:3.13ns L:0",color=blue];
+}

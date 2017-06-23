@@ -1,0 +1,19 @@
+digraph {
+Node0x3398500[label="  %17 = load i16* @g_55, align 2"];
+Node0x3398500 -> Node0x3398500[label="D:0.00ns L:2",color=blue];
+Node0x3398960[label="  %22 = call zeroext i16 @safe_mul_func_..."];
+Node0x3398500 -> Node0x3398960[label="D:0.00ns L:2",color=red];
+Node0x33985e0[label="  %18 = sext i16 %17 to i32"];
+Node0x33985e0 -> Node0x33985e0[label="D:0.00ns L:0",color=blue];
+Node0x33986c0[label="  %19 = load i32* @g_59, align 4"];
+Node0x33986c0 -> Node0x33986c0[label="D:0.00ns L:2",color=blue];
+Node0x33986c0 -> Node0x33986c0[label="D:0.00ns L:2",color=blue];
+Node0x33986c0 -> Node0x3398960[label="D:0.00ns L:2",color=red];
+Node0x33987a0[label="  %20 = trunc i32 %19 to i16"];
+Node0x33987a0 -> Node0x33987a0[label="D:0.00ns L:0",color=blue];
+Node0x3398880[label="  %21 = trunc i32 %19 to i16"];
+Node0x3398880 -> Node0x3398880[label="D:0.00ns L:0",color=blue];
+Node0x3398960 -> Node0x3398960[label="D:0.00ns L:1",color=blue];
+Node0x3398a40[label="  %23 = icmp eq i16 %22, 0"];
+Node0x3398a40 -> Node0x3398a40[label="D:2.01ns L:0",color=blue];
+}

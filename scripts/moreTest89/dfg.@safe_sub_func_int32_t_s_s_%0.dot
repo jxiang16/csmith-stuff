@@ -1,0 +1,18 @@
+digraph {
+Node0x3392530[label="  %1 = xor i32 %si1, %si2"];
+Node0x3392530 -> Node0x3392530[label="D:0.91ns L:0",color=blue];
+Node0x33918c0[label="  %2 = xor i32 %si1, %si2"];
+Node0x33918c0 -> Node0x33918c0[label="D:0.91ns L:0",color=blue];
+Node0x33c1210[label="  %3 = and i32 %2, -2147483648"];
+Node0x33c1210 -> Node0x33c1210[label="D:0.00ns L:0",color=blue];
+Node0x33c10b0[label="  %4 = xor i32 %3, %si1"];
+Node0x33c10b0 -> Node0x33c10b0[label="D:0.91ns L:0",color=blue];
+Node0x33c4c80[label="  %5 = sub nsw i32 %4, %si2"];
+Node0x33c4c80 -> Node0x33c4c80[label="D:2.40ns L:0",color=blue];
+Node0x33c4db0[label="  %6 = xor i32 %5, %si2"];
+Node0x33c4db0 -> Node0x33c4db0[label="D:0.91ns L:0",color=blue];
+Node0x33c4e90[label="  %7 = and i32 %1, %6"];
+Node0x33c4e90 -> Node0x33c4e90[label="D:0.87ns L:0",color=blue];
+Node0x33c4f70[label="  %8 = icmp slt i32 %7, 0"];
+Node0x33c4f70 -> Node0x33c4f70[label="D:3.36ns L:0",color=blue];
+}

@@ -1,0 +1,24 @@
+digraph {
+Node0x340e8d0[label="  %4 = bitcast [6 x [3 x [6 x i32]]]* %l..."];
+Node0x340e8d0 -> Node0x340e8d0[label="D:0.00ns L:0",color=blue];
+Node0x340ea90[label="  %5 = call zeroext i16 @func_11(i16 zer..."];
+Node0x340e9b0[label="  call void @legup_memcpy_4(i8* %4, i8* ..."];
+Node0x340e9b0 -> Node0x340ea90[label="D:0.00ns L:1",color=red];
+Node0x340eb70[label="  %6 = call zeroext i16 @func_11(i16 zer..."];
+Node0x340e9b0 -> Node0x340eb70[label="D:0.00ns L:1",color=red];
+Node0x340ec50[label="  %7 = load i32* @g_3, align 4"];
+Node0x340e9b0 -> Node0x340ec50[label="D:0.00ns L:1",color=red];
+Node0x340ea90 -> Node0x340ea90[label="D:0.00ns L:1",color=blue];
+Node0x340ea90 -> Node0x340eb70[label="D:0.00ns L:1",color=red];
+Node0x340ea90 -> Node0x340ec50[label="D:0.00ns L:1",color=red];
+Node0x340eb70 -> Node0x340eb70[label="D:0.00ns L:1",color=blue];
+Node0x340eb70 -> Node0x340ec50[label="D:0.00ns L:1",color=red];
+Node0x340ec50 -> Node0x340ec50[label="D:0.00ns L:2",color=blue];
+Node0x340ec50 -> Node0x340ec50[label="D:0.00ns L:2",color=blue];
+Node0x340ec50 -> Node0x340ec50[label="D:0.00ns L:2",color=blue];
+Node0x340ec50 -> Node0x340ec50[label="D:0.00ns L:2",color=blue];
+Node0x340ed30[label="  %8 = trunc i32 %7 to i16"];
+Node0x340ed30 -> Node0x340ed30[label="D:0.00ns L:0",color=blue];
+Node0x340ee10[label="  %9 = icmp eq i32 %7, 0"];
+Node0x340ee10 -> Node0x340ee10[label="D:2.49ns L:0",color=blue];
+}

@@ -1,0 +1,20 @@
+digraph {
+Node0x2d814a0[label="  %7 = load i8** %st, align 4"];
+Node0x2d814a0 -> Node0x2d814a0[label="D:0.00ns L:2",color=blue];
+Node0x2d814a0 -> Node0x2d814a0[label="D:0.00ns L:2",color=blue];
+Node0x2d81660[label="  store i8* %8, i8** %st, align 4"];
+Node0x2d814a0 -> Node0x2d81660[label="D:0.00ns L:2",color=red];
+Node0x2d81580[label="  %8 = getelementptr inbounds i8* %7, i3..."];
+Node0x2d81580 -> Node0x2d81580[label="D:0.00ns L:0",color=blue];
+Node0x2d81740[label="  %9 = load i8* %7, align 1"];
+Node0x2d81740 -> Node0x2d81740[label="D:0.00ns L:2",color=blue];
+Node0x2d82f70[label="  store i8 %9, i8* %10, align 1"];
+Node0x2d81740 -> Node0x2d82f70[label="D:0.00ns L:2",color=red];
+Node0x2d81820[label="  %10 = load i8** %dt, align 4"];
+Node0x2d81820 -> Node0x2d81820[label="D:0.00ns L:2",color=blue];
+Node0x2d81820 -> Node0x2d81820[label="D:0.00ns L:2",color=blue];
+Node0x2d82e90[label="  store i8* %11, i8** %dt, align 4"];
+Node0x2d81820 -> Node0x2d82e90[label="D:0.00ns L:2",color=red];
+Node0x2d81900[label="  %11 = getelementptr inbounds i8* %10, ..."];
+Node0x2d81900 -> Node0x2d81900[label="D:0.00ns L:0",color=blue];
+}

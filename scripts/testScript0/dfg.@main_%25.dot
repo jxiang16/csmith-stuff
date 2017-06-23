@@ -1,0 +1,4 @@
+digraph {
+Node0x3957270[label="  %26 = add nsw i32 %7, 1"];
+Node0x3957270 -> Node0x3957270[label="D:2.50ns L:0",color=blue];
+}

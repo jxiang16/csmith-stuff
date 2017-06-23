@@ -1,0 +1,8 @@
+Depth = 1;
+Width = 32;
+Address_radix = dec;
+Data_radix = hex;
+Content
+Begin
+0: 6D2E8588;	-- g_3[0] = 1831765384
+End;

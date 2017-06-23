@@ -1,0 +1,8 @@
+Depth = 1;
+Width = 32;
+Address_radix = dec;
+Data_radix = hex;
+Content
+Begin
+0: 2350C165;	-- g_59[0] = 592494949
+End;

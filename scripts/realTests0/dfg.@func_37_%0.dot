@@ -1,0 +1,31 @@
+digraph {
+Node0x2dc1200[label="  %l_72 = alloca [6 x i32], align 4"];
+Node0x2dc1200 -> Node0x2dc1200[label="D:0.00ns L:0",color=blue];
+Node0x2dc1200 -> Node0x2dc1200[label="D:0.00ns L:0",color=blue];
+Node0x2dc1200 -> Node0x2dc1200[label="D:0.00ns L:0",color=blue];
+Node0x2dc1200 -> Node0x2dc1200[label="D:0.00ns L:0",color=blue];
+Node0x2dc1200 -> Node0x2dc1200[label="D:0.00ns L:0",color=blue];
+Node0x2dc1200 -> Node0x2dc1200[label="D:0.00ns L:0",color=blue];
+Node0x2dc16f0[label="  %l_81 = alloca [3 x [1 x [2 x i32]]], ..."];
+Node0x2dc16f0 -> Node0x2dc16f0[label="D:0.00ns L:0",color=blue];
+Node0x2dc16f0 -> Node0x2dc16f0[label="D:0.00ns L:0",color=blue];
+Node0x2dc1800[label="  %1 = bitcast [6 x i32]* %l_72 to i8*"];
+Node0x2dc1800 -> Node0x2dc1800[label="D:0.00ns L:0",color=blue];
+Node0x2dc1aa0[label="  call void @legup_memcpy_4(i8* %2, i8* ..."];
+Node0x2dc18e0[label="  call void @legup_memcpy_4(i8* %1, i8* ..."];
+Node0x2dc18e0 -> Node0x2dc1aa0[label="D:0.00ns L:1",color=red];
+Node0x2dc1b80[label="  %3 = load i16* @g_34, align 2"];
+Node0x2dc18e0 -> Node0x2dc1b80[label="D:0.00ns L:1",color=red];
+Node0x2dc1d70[label="  %5 = load i32* %4, align 4"];
+Node0x2dc18e0 -> Node0x2dc1d70[label="D:0.00ns L:1",color=red];
+Node0x2dc19c0[label="  %2 = bitcast [3 x [1 x [2 x i32]]]* %l..."];
+Node0x2dc19c0 -> Node0x2dc19c0[label="D:0.00ns L:0",color=blue];
+Node0x2dc1aa0 -> Node0x2dc1b80[label="D:0.00ns L:1",color=red];
+Node0x2dc1aa0 -> Node0x2dc1d70[label="D:0.00ns L:1",color=red];
+Node0x2dc1b80 -> Node0x2dc1b80[label="D:0.00ns L:2",color=blue];
+Node0x2dc1c90[label="  %4 = getelementptr inbounds [6 x i32]*..."];
+Node0x2dc1c90 -> Node0x2dc1c90[label="D:0.00ns L:0",color=blue];
+Node0x2dc1d70 -> Node0x2dc1d70[label="D:0.00ns L:2",color=blue];
+Node0x2dc1e50[label="  %6 = icmp eq i32 %5, 0"];
+Node0x2dc1e50 -> Node0x2dc1e50[label="D:2.49ns L:0",color=blue];
+}

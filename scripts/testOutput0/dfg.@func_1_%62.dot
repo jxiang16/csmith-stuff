@@ -1,0 +1,27 @@
+digraph {
+Node0x2bedd70[label="  %63 = load i32* getelementptr inbounds..."];
+Node0x2bedd70 -> Node0x2bedd70[label="D:0.00ns L:2",color=blue];
+Node0x2bedd70 -> Node0x2bedd70[label="D:0.00ns L:2",color=blue];
+Node0x2bedd70 -> Node0x2bedd70[label="D:0.00ns L:2",color=blue];
+Node0x2bedf30[label="  %65 = call i32 @func_17(i8 signext %64..."];
+Node0x2bedd70 -> Node0x2bedf30[label="D:0.00ns L:2",color=red];
+Node0x2bee0f0[label="  %67 = call i32 @func_13(i32 %65, i32 %..."];
+Node0x2bedd70 -> Node0x2bee0f0[label="D:0.00ns L:2",color=red];
+Node0x2bee1d0[label="  %68 = call zeroext i8 @safe_rshift_fun..."];
+Node0x2bedd70 -> Node0x2bee1d0[label="D:0.00ns L:2",color=red];
+Node0x2bede50[label="  %64 = trunc i32 %63 to i8"];
+Node0x2bede50 -> Node0x2bede50[label="D:0.00ns L:0",color=blue];
+Node0x2bedf30 -> Node0x2bedf30[label="D:0.00ns L:1",color=blue];
+Node0x2bee010[label="  %66 = load i32* getelementptr inbounds..."];
+Node0x2bedf30 -> Node0x2bee010[label="D:0.00ns L:1",color=red];
+Node0x2bedf30 -> Node0x2bee0f0[label="D:0.00ns L:1",color=red];
+Node0x2bedf30 -> Node0x2bee1d0[label="D:0.00ns L:1",color=red];
+Node0x2bee010 -> Node0x2bee010[label="D:0.00ns L:2",color=blue];
+Node0x2bee010 -> Node0x2bee0f0[label="D:0.00ns L:2",color=red];
+Node0x2bee010 -> Node0x2bee1d0[label="D:0.00ns L:2",color=red];
+Node0x2bee0f0 -> Node0x2bee0f0[label="D:0.00ns L:1",color=blue];
+Node0x2bee0f0 -> Node0x2bee1d0[label="D:0.00ns L:1",color=red];
+Node0x2bee1d0 -> Node0x2bee1d0[label="D:0.00ns L:1",color=blue];
+Node0x2bee2b0[label="  %69 = icmp eq i8 %68, 0"];
+Node0x2bee2b0 -> Node0x2bee2b0[label="D:1.79ns L:0",color=blue];
+}

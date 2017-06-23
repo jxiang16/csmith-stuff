@@ -1,0 +1,6 @@
+digraph {
+Node0x3bd2eb0[label="  %99 = load i32* getelementptr inbounds..."];
+Node0x3bd2eb0 -> Node0x3bd2eb0[label="D:0.00ns L:2",color=blue];
+Node0x3bd2f90[label="  %100 = icmp ne i32 %99, 0"];
+Node0x3bd2f90 -> Node0x3bd2f90[label="D:2.49ns L:0",color=blue];
+}

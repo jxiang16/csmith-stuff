@@ -1,0 +1,23 @@
+digraph {
+Node0x409d040[label="  %127 = phi i1 [ true, %115 ], [ %125, ..."];
+Node0x409d040 -> Node0x409d040[label="D:0.00ns L:0",color=blue];
+Node0x409d120[label="  %128 = zext i1 %127 to i32"];
+Node0x409d120 -> Node0x409d120[label="D:0.00ns L:0",color=blue];
+Node0x409d200[label="  %129 = icmp sgt i32 %128, %21"];
+Node0x409d200 -> Node0x409d200[label="D:3.13ns L:0",color=blue];
+Node0x409d2e0[label="  %130 = zext i1 %129 to i16"];
+Node0x409d2e0 -> Node0x409d2e0[label="D:0.00ns L:0",color=blue];
+Node0x409d3c0[label="  %131 = call zeroext i16 @safe_add_func..."];
+Node0x409d3c0 -> Node0x409d3c0[label="D:0.00ns L:1",color=blue];
+Node0x409d4a0[label="  %132 = call zeroext i16 @safe_rshift_f..."];
+Node0x409d3c0 -> Node0x409d4a0[label="D:0.00ns L:1",color=red];
+Node0x409d740[label="  store i32 %134, i32* getelementptr inb..."];
+Node0x409d3c0 -> Node0x409d740[label="D:0.00ns L:1",color=red];
+Node0x409d4a0 -> Node0x409d4a0[label="D:0.00ns L:1",color=blue];
+Node0x409d4a0 -> Node0x409d740[label="D:0.00ns L:1",color=red];
+Node0x409d580[label="  %133 = icmp ult i16 %132, 187"];
+Node0x409d580 -> Node0x409d580[label="D:3.10ns L:0",color=blue];
+Node0x409d660[label="  %134 = zext i1 %133 to i32"];
+Node0x409d660 -> Node0x409d660[label="D:0.00ns L:0",color=blue];
+Node0x409d660 -> Node0x409d660[label="D:0.00ns L:0",color=blue];
+}

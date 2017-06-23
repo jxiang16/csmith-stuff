@@ -1,0 +1,4 @@
+digraph {
+Node0x33f2790[label="  %11 = sext i16 %left to i32"];
+Node0x33f2790 -> Node0x33f2790[label="D:0.00ns L:0",color=blue];
+}

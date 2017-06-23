@@ -1,0 +1,162 @@
+\documentclass[landscape]{article}
+\usepackage{gantt}
+\pagestyle{empty}
+\begin{document}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{11}{16}
+\begin{ganttitle}
+\numtitle{0}{1}{15}{1}
+\end{ganttitle}
+\ganttbar{  br label \%6}{1}{1}
+\ganttbar{  call void @platform\_main\_begin() #3}{2}{1}
+\ganttbar{  call void @crc32\_gentab() #3}{4}{1}
+\ganttbar{  \%1 = call i32 @func\_1() #3}{6}{1}
+\ganttbar{  \%2 = load volatile i32* @g\_22, align 4}{7}{2}
+\ganttcon{9}{5}{9}{6}
+\ganttbar{  \%3 = sext i32 \%2 to i64}{9}{1}
+\ganttcon{10}{6}{10}{7}
+\ganttbar{  call void @transparent\_crc(i64 \%3, i8* getelementptr inbounds ([5 x i8]* @.s...}{10}{1}
+\ganttbar{  \%4 = load i32* @g\_37, align 4}{11}{2}
+\ganttcon{13}{8}{13}{9}
+\ganttbar{  \%5 = zext i32 \%4 to i64}{13}{1}
+\ganttcon{14}{9}{14}{10}
+\ganttbar{  call void @transparent\_crc(i64 \%5, i8* getelementptr inbounds ([5 x i8]* @.s...}{14}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{4}{2}
+\begin{ganttitle}
+\numtitle{0}{1}{1}{1}
+\end{ganttitle}
+\ganttbar{  \%7 = phi i32 [ 0, \%0 ], [ \%14, \%13 ]}{1}{1}
+\ganttcon{2}{1}{1}{2}
+\ganttbar{  \%exitcond1 = icmp eq i32 \%7, 7}{1}{1}
+\ganttcon{2}{2}{1}{3}
+\ganttbar{  br i1 \%exitcond1, label \%15, label \%8}{1}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{6}{6}
+\begin{ganttitle}
+\numtitle{0}{1}{5}{1}
+\end{ganttitle}
+\ganttbar{  \%scevgep2 = getelementptr [7 x i32]* @g\_38, i32 0, i32 \%7}{1}{1}
+\ganttcon{2}{1}{1}{2}
+\ganttbar{  \%9 = load i32* \%scevgep2, align 4}{1}{2}
+\ganttcon{3}{2}{3}{4}
+\ganttbar{  br i1 false, label \%11, label \%12}{1}{1}
+\ganttbar{  \%10 = zext i32 \%9 to i64}{3}{1}
+\ganttcon{4}{4}{4}{5}
+\ganttbar{  call void @transparent\_crc(i64 \%10, i8* getelementptr inbounds ([8 x i8]* @....}{4}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{2}{2}
+\begin{ganttitle}
+\numtitle{0}{1}{1}{1}
+\end{ganttitle}
+\ganttbar{  br label \%12}{1}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{2}{2}
+\begin{ganttitle}
+\numtitle{0}{1}{1}{1}
+\end{ganttitle}
+\ganttbar{  br label \%13}{1}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{3}{2}
+\begin{ganttitle}
+\numtitle{0}{1}{1}{1}
+\end{ganttitle}
+\ganttbar{  \%14 = add nsw i32 \%7, 1}{1}{1}
+\ganttbar{  br label \%6}{1}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{5}{6}
+\begin{ganttitle}
+\numtitle{0}{1}{5}{1}
+\end{ganttitle}
+\ganttbar{  \%16 = load i32* @g\_77, align 4}{1}{2}
+\ganttcon{3}{1}{3}{3}
+\ganttbar{  br label \%18}{1}{1}
+\ganttbar{  \%17 = sext i32 \%16 to i64}{3}{1}
+\ganttcon{4}{3}{4}{4}
+\ganttbar{  call void @transparent\_crc(i64 \%17, i8* getelementptr inbounds ([5 x i8]* @....}{4}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{4}{2}
+\begin{ganttitle}
+\numtitle{0}{1}{1}{1}
+\end{ganttitle}
+\ganttbar{  \%19 = phi i32 [ 0, \%15 ], [ \%26, \%25 ]}{1}{1}
+\ganttcon{2}{1}{1}{2}
+\ganttbar{  \%exitcond = icmp eq i32 \%19, 6}{1}{1}
+\ganttcon{2}{2}{1}{3}
+\ganttbar{  br i1 \%exitcond, label \%27, label \%20}{1}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{6}{6}
+\begin{ganttitle}
+\numtitle{0}{1}{5}{1}
+\end{ganttitle}
+\ganttbar{  \%scevgep = getelementptr [6 x i16]* @g\_78, i32 0, i32 \%19}{1}{1}
+\ganttcon{2}{1}{1}{2}
+\ganttbar{  \%21 = load i16* \%scevgep, align 2}{1}{2}
+\ganttcon{3}{2}{3}{4}
+\ganttbar{  br i1 false, label \%23, label \%24}{1}{1}
+\ganttbar{  \%22 = zext i16 \%21 to i64}{3}{1}
+\ganttcon{4}{4}{4}{5}
+\ganttbar{  call void @transparent\_crc(i64 \%22, i8* getelementptr inbounds ([8 x i8]* @....}{4}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{2}{2}
+\begin{ganttitle}
+\numtitle{0}{1}{1}{1}
+\end{ganttitle}
+\ganttbar{  br label \%24}{1}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{2}{2}
+\begin{ganttitle}
+\numtitle{0}{1}{1}{1}
+\end{ganttitle}
+\ganttbar{  br label \%25}{1}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{3}{2}
+\begin{ganttitle}
+\numtitle{0}{1}{1}{1}
+\end{ganttitle}
+\ganttbar{  \%26 = add nsw i32 \%19, 1}{1}{1}
+\ganttbar{  br label \%18}{1}{1}
+\end{gantt}
+\end{figure}
+\begin{figure}
+\begin{gantt}[fontsize=\scriptsize]{8}{10}
+\begin{ganttitle}
+\numtitle{0}{1}{9}{1}
+\end{ganttitle}
+\ganttbar{  \%28 = load i32* @g\_79, align 4}{1}{2}
+\ganttcon{3}{1}{3}{2}
+\ganttbar{  \%29 = sext i32 \%28 to i64}{3}{1}
+\ganttcon{4}{2}{4}{3}
+\ganttbar{  call void @transparent\_crc(i64 \%29, i8* getelementptr inbounds ([5 x i8]* @....}{4}{1}
+\ganttbar{  \%30 = load i32* @crc32\_context, align 4}{5}{2}
+\ganttcon{7}{4}{7}{5}
+\ganttbar{  \%31 = xor i32 \%30, -1}{7}{1}
+\ganttcon{8}{5}{8}{6}
+\ganttbar{  \%32 = call i32 @platform\_main\_end(i32 \%31, i32 0) #3}{8}{1}
+\ganttcon{9}{6}{9}{7}
+\ganttbar{  ret i32 \%32}{9}{1}
+\end{gantt}
+\end{figure}
+\end{document}

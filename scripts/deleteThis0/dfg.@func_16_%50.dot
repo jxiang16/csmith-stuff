@@ -1,0 +1,27 @@
+digraph {
+Node0x3c2e480[label="  %51 = and i32 %.021, 33328"];
+Node0x3c2e480 -> Node0x3c2e480[label="D:0.00ns L:0",color=blue];
+Node0x3c2e560[label="  %52 = load i8* @g_2, align 1"];
+Node0x3c2e560 -> Node0x3c2e560[label="D:0.00ns L:2",color=blue];
+Node0x3c2ee70[label="  %62 = call zeroext i16 @safe_div_func_..."];
+Node0x3c2e560 -> Node0x3c2ee70[label="D:0.00ns L:2",color=red];
+Node0x3c2e640[label="  %53 = sext i8 %52 to i32"];
+Node0x3c2e640 -> Node0x3c2e640[label="D:0.00ns L:0",color=blue];
+Node0x3c2e720[label="  %54 = or i32 %51, %53"];
+Node0x3c2e720 -> Node0x3c2e720[label="D:0.87ns L:0",color=blue];
+Node0x3c2e800[label="  %55 = icmp ult i32 %54, -739161654"];
+Node0x3c2e800 -> Node0x3c2e800[label="D:2.92ns L:0",color=blue];
+Node0x3c2e930[label="  %56 = zext i1 %55 to i32"];
+Node0x3c2e930 -> Node0x3c2e930[label="D:0.00ns L:0",color=blue];
+Node0x3c2ea10[label="  %57 = getelementptr inbounds [10 x i32..."];
+Node0x3c2ea10 -> Node0x3c2ea10[label="D:0.00ns L:0",color=blue];
+Node0x3c2eaf0[label="  %58 = load i32* %57, align 4"];
+Node0x3c2eaf0 -> Node0x3c2eaf0[label="D:0.00ns L:2",color=blue];
+Node0x3c2eaf0 -> Node0x3c2ee70[label="D:0.00ns L:2",color=red];
+Node0x3c2ebd0[label="  %59 = xor i32 %56, %58"];
+Node0x3c2ebd0 -> Node0x3c2ebd0[label="D:0.91ns L:0",color=blue];
+Node0x3c2ecb0[label="  %60 = trunc i32 %59 to i16"];
+Node0x3c2ecb0 -> Node0x3c2ecb0[label="D:0.00ns L:0",color=blue];
+Node0x3c2ed90[label="  %61 = trunc i32 %.021 to i16"];
+Node0x3c2ed90 -> Node0x3c2ed90[label="D:0.00ns L:0",color=blue];
+}

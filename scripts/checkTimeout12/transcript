@@ -1,0 +1,50 @@
+# vsim -c -do "run 7000000000000000ns; exit;" work.main_tb 
+# Start time: 18:44:49 on Jun 13,2017
+# Loading work.main_tb
+# Loading work.top
+# Loading work.memory_controller
+# Loading work.ram_dual_port
+# Loading work.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading work.rom_dual_port
+# Loading work.main
+# Loading work.platform_main_begin
+# Loading work.crc32_gentab
+# Loading work.func_1
+# Loading work.safe_div_func_int32_t_s_s
+# Loading work.lpm_divide
+# Loading work.LPM_HINT_EVALUATION
+# Loading work.safe_sub_func_int8_t_s_s
+# Loading work.safe_lshift_func_uint8_t_u_u
+# Loading work.safe_add_func_int8_t_s_s
+# Loading work.safe_rshift_func_int16_t_s_s
+# Loading work.safe_div_func_int8_t_s_s
+# Loading work.func_25
+# Loading work.func_13
+# Loading work.safe_add_func_int32_t_s_s
+# Loading work.func_7
+# Loading work.legup_memcpy_2
+# Loading work.legup_memcpy_4
+# Loading work.safe_lshift_func_int8_t_s_s
+# Loading work.safe_lshift_func_int8_t_s_u
+# Loading work.safe_rshift_func_uint8_t_u_u
+# Loading work.safe_add_func_uint8_t_u_u
+# Loading work.safe_mul_func_int16_t_s_s
+# Loading work.safe_lshift_func_int16_t_s_s
+# Loading work.safe_rshift_func_uint16_t_u_u
+# Loading work.safe_lshift_func_uint16_t_u_u
+# Loading work.safe_sub_func_int32_t_s_s
+# Loading work.safe_mod_func_uint32_t_u_u
+# Loading work.safe_div_func_uint8_t_u_u
+# Loading work.safe_mul_func_int8_t_s_s
+# Loading work.safe_sub_func_uint16_t_u_u
+# Loading work.transparent_crc
+# Loading work.crc32_8bytes
+# Loading work.crc32_byte
+# Loading work.platform_main_end
+# ** Warning: (vsim-3017) checkTimeout12.v(145): [TFMPC] - Too few port connections. Expected 22, found 20.
+#         Region: /main_tb/top_inst/main_inst
+# ** Warning: (vsim-3722) checkTimeout12.v(145): [TFMPC] - Missing connection for port 'arg_argc'.
+# ** Warning: (vsim-3722) checkTimeout12.v(145): [TFMPC] - Missing connection for port 'arg_argv'.
+# ** Warning: Design size of 11773 statements exceeds ModelSim Altera Starter recommended capacity.
+# Expect performance to be adversely affected.
+# run 7000000000000000ns

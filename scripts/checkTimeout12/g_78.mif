@@ -1,0 +1,13 @@
+Depth = 6;
+Width = 16;
+Address_radix = dec;
+Data_radix = hex;
+Content
+Begin
+0: FFFF;	-- g_78[0] = -1
+1: FFFF;	-- g_78[1] = -1
+2: 58DD;	-- g_78[2] = 22749
+3: FFFF;	-- g_78[3] = -1
+4: FFFF;	-- g_78[4] = -1
+5: 58DD;	-- g_78[5] = 22749
+End;
