@@ -7,7 +7,7 @@ my $CSMITH_HOME = $ENV{"CSMITH_HOME"};
 #my $CSMITH_USER_OPTIONS = " --no-structs --no-math64 --max-funcs 1 --no-arrays --no-pointers"; 
 my $CSMITH_USER_OPTIONS = " --no-structs --no-pointers --no-math64 --max-funcs 4 --no-unions";
 my $MAKE_TIMEOUT = 300; 
-my $PROG_TIMEOUT = 8;
+my $PROG_TIMEOUT = 10;
 my $csmith_bug = 0;
 my $MAX_SIZE = 8500;
 my $MIN_SIZE = 3000;
@@ -15,14 +15,16 @@ my $sumString = "checksum = ";
 my $len = length($sumString);
 sub test_one ($) {
     (my $n) = @_;
-    my $folder = "moreTestz$n";
+    $n += 3014;
+    chdir "$CSMITH_HOME/scripts";
+    my $folder = "$n";
     my $cfile = "$folder.c";
     my $seed;
     my $filesize;
     my @outputLines;
     #my $tempoFile;
 	
-    my $cmd = "$CSMITH_HOME/src/csmith $CSMITH_USER_OPTIONS --output $cfile";
+    my $cmd = "$CSMITH_HOME/scripts/csmith $CSMITH_USER_OPTIONS --output $cfile";
     # run Csmith until generate a big enough program
     while (1) {
 	system "$cmd";
@@ -53,7 +55,8 @@ sub test_one ($) {
 	eval {
 		local $SIG{ALRM} = sub {die "alarm\n" };
 		alarm $PROG_TIMEOUT;
-		system "./$folder > execOutput.txt";
+		system "timeout 10s ./$folder > execOutput.txt";
+		
 		alarm 0;
 	};
 	if ($@) {
@@ -69,7 +72,7 @@ sub test_one ($) {
 		eval {
 			local $SIG{ALRM} = sub{die "alarm\n"};
 			alarm $MAKE_TIMEOUT;
-			system "make v > makeOutput.txt";
+			system "timeout 300s make v > makevOutput.txt";
 			alarm 0;
 		};
 		if ($@) {
@@ -86,32 +89,35 @@ sub test_one ($) {
 		close $tempFile;
 		chomp $firstLine;
 		my $softOutput = substr($firstLine, $len);
-		print "$softOutput\n";
+		print "softOutput $softOutput\n";
 
 
-
+		
 		tie @outputLines, 'Tie::File', "makevOutput.txt";
 		my $line = $outputLines[-6];
 		my $subs = "_val=";
 		my $ind = index($line, $subs);
 		my $output = substr($line, $ind + 5);
 		chomp $output;
-		print "$output\n";
+		print "output $output\n";
 		my $correct = $output == $softOutput;
-		print "$correct\n";
+		print "hello $correct\n";
 		my $destination;
 		system "touch output.txt";
 		open (my $tempoFile, '>', "output.txt");
 		print $tempoFile "$softOutput";
 		close $tempoFile;
 		if ($correct == 1) {
-			$destination = "../passes";
+			$destination = "$CSMITH_HOME/files";
+			system "scp $cfile qijing.huang\@jaketown.millennium.berkeley.edu:/scratch/qijing.huang/hls_files/dataset/skeleton";
 		} else {
-			$destination = "../fails";
+			$destination = "../../fails";
 		}
-		chdir "..";
-		system "mv $folder $destination";
-	
+		#chdir "..";
+		
+		system "mv $cfile $destination";
+	#	chdir "..";
+	#	system "rm -r $folder";
 	
 
 		return;
