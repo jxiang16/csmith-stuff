@@ -12,10 +12,11 @@ my $csmith_bug = 0;
 my $MAX_SIZE = 8500;
 my $MIN_SIZE = 3000;
 my $sumString = "checksum = ";
+my $currFileNum = 3014;
 my $len = length($sumString);
 sub test_one ($) {
     (my $n) = @_;
-    $n += 3014;
+    $n += $currFileNum;
     chdir "$CSMITH_HOME/scripts";
     my $folder = "$n";
     my $cfile = "$folder.c";
